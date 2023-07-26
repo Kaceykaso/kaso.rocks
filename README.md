@@ -1,0 +1,2 @@
+# kaso.rocks
+New site
