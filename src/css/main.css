@@ -1,0 +1,195 @@
+/**
+    kaso.rocks > css
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+
+COLOR PALETTE
+-------------
+tbd
+**/
+
+/* BODY 🧍‍♂️ */
+
+body {
+    /* Colors 🎨 */
+    background: #7D9C60;
+    color: #2F2D29;
+    /* Space 🪐 */
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+p {
+    margin: 0 auto;
+ }
+
+ ul {
+    list-style: none;
+ }
+
+/* HEADER 💀 */
+
+header {
+    display: inline;
+    font-size: 1.5vw;
+    /* Space 🪐 */
+    float: right;
+    margin: 0;
+    padding: 1em;
+    width: 40vw;
+}
+
+header ul {
+    display: flex;
+    /* Flexing 💪 */
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+ /* CONTENT 📖 */
+
+ .main {
+    /* Colors 🎨 */
+    background: darkgrey;
+    color: black;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 1px darkslategrey;
+ }
+
+ section.main {
+    display: inline;
+    /* Space 🪐 */
+    float: left;
+    height: 100%;
+    margin: 0 0 0 2vw;
+    padding: 1em;
+    width: 55vw;
+ }
+
+ .screen {
+    background: seagreen;
+    border: solid grey;
+    border-radius: 5px;
+ }
+
+ .controls {
+    display: flex;
+    /* Flexing 💪 */
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly
+ }
+
+ .controls .d-pad {
+    margin: 0;
+    padding: 0;
+ }
+
+ .controls .d-pad .d-row {
+    clear: left;
+    display: block;
+ }
+
+ .controls .d-pad .d-row > * {
+    display: inline;
+    float: left;
+ }
+
+ .controls .d-pad .single {
+    margin: 0 1.5em;
+ }
+
+ .controls .d-pad .d-up,
+ .controls .d-pad .d-left,
+ .controls .d-pad .d-center,
+ .controls .d-pad .d-right,
+ .controls .d-pad .d-down {
+    /* Colors 🎨 */
+    background: grey;
+    /* Space 🪐 */
+    height: 1.5em;
+    padding-bottom: 0.25em;
+    width: 1.5em;
+    /* Fonts 🔤 */
+    line-height: 0.25em;
+    text-align: center;
+ }
+
+ .controls .d-pad .d-up {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid transparent;
+    border-right: 2px solid lightgrey;
+    border-bottom: 2px solid black;
+    transform: rotate(-90deg);
+ }
+
+ .controls .d-pad .d-left {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+ }
+
+ .controls .d-pad .d-center {
+    border: transparent;
+ }
+
+ .controls .d-pad .d-right {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid transparent;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+ }
+
+ .controls .d-pad .d-down {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid black;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+    transform: rotate(-90deg);
+ }
+
+
+ .controls .middle-btns > button {
+    /* Colors 🎨 */
+    background: grey;
+    /* Fonts 🔤 */
+    font-size: 0.5em;
+ }
+
+ /* FOOTER 🦶 */
+
+ footer#footer {
+    display: flex;
+    /* Space 🪐 */
+    bottom: 0;
+    margin: 2em 1em;
+    position: absolute;
+    width: 100%;
+    /* Flexing 💪 */
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ /* TYPOGRAPHY 🔤 */
+
+ /* FORMS 📝 */
+
+ /* ANIMATIONS 📺 */
+
+ /* OVERRIDES ☠️ */
+ a.nes-btn,
+.nes-container {
+    margin-bottom: 1em;
+}
+
+ @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    .nes-btn {
+        border-image-repeat: stretch;
+    }
+ }
