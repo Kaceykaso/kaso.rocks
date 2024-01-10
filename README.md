@@ -1,2 +1,2 @@
-# https://kaso.rocks
+# kaso.rocks
 Under construction, duh
