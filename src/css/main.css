@@ -17,7 +17,6 @@ body {
     /* Space 🪐 */
     height: 100vh;
     margin: 0 auto;
-    padding: 0.5em;
 }
 
 p {
@@ -58,6 +57,8 @@ header ul {
     border-right: 3px solid grey;
     border-radius: 4px;
     box-shadow: 1px 1px 5px 1px darkslategrey;
+   /* Space 🪐 */
+    margin: 0.5em;
  }
 
  section.main {
@@ -167,7 +168,7 @@ header ul {
     /* Space 🪐 */
     bottom: 0;
     margin: 2em 1em;
-    position: absolute;
+    position: fixed;
     width: 100%;
     /* Flexing 💪 */
     flex-flow: row nowrap;
@@ -184,6 +185,26 @@ footer .surprise {
  /* FORMS 📝 */
 
  /* ANIMATIONS 📺 */
+
+ /* RESPONSIVE 📱 */
+ @media screen and (min-width: 50px) and (max-width: 650px) {
+   header.main, section.main {
+      display: block;
+      float: none;
+      font-size: 0.5em;
+      width: 95%;
+   }
+   section.main {
+      margin-top: 10px;
+   }
+   footer#footer {
+      /*background: linear-gradient(0deg, white,80%, transparent);*/
+      font-size: 1.5vh;
+      margin: 10px 0 0;
+      padding: 0 15px 10px;
+      position: relative;
+   }
+ }
 
  /* OVERRIDES ☠️ */
  a.nes-btn,
