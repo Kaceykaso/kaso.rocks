@@ -15,7 +15,8 @@ const btns = {
     "a": document.getElementById("a-btn"),
     "b": document.getElementById("b-btn")
 }
-const suprise = document.getElementById("suprise");
+const surprise = document.getElementById("surprise");
+const surpriseLink = document.getElementsByClassName("surprise");
 let code = [];
 
 
@@ -38,7 +39,8 @@ btns.start.addEventListener('click', () => {
 const konamiGo = (code) => {
     const correct = ["up","up","down","down","left","right","left","right","b","a"];
     if (code.length === correct.length && code.every((element, index) => element === correct[index])) {
-        suprise.style.setProperty("display", "block");
+        surprise.style.setProperty("display", "block");
+        surpriseLink[0].style.setProperty("visibility", "visible");
     }
 }
 
