@@ -12,9 +12,10 @@ tbd
 
 body {
     /* Colors 🎨 */
-    background: #7D9C60;
+    background: linear-gradient(180deg, rgb(244, 78, 183), teal, rgb(151, 65, 151), rgb(246, 246, 124)) no-repeat;
     color: #2F2D29;
     /* Space 🪐 */
+    height: 100vh;
     margin: 0 auto;
     padding: 0.5em;
 }
@@ -63,7 +64,6 @@ header ul {
     display: inline;
     /* Space 🪐 */
     float: left;
-    height: 100%;
     margin: 0 0 0 2vw;
     padding: 1em;
     width: 55vw;
