@@ -1,2 +1,2 @@
-# kaso.rocks
-New site
+# https://kaso.rocks
+Under construction, duh
