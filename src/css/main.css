@@ -27,7 +27,7 @@ p {
     list-style: none;
  }
 
- a {
+ a:not(.nes-btn) {
    color: black;
    text-decoration: underline;
 }
