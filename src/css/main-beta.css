@@ -1,0 +1,338 @@
+/**
+    kaso.rocks > css
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+
+COLOR PALETTE
+-------------
+tbd
+**/
+
+/* BODY 🧍‍♂️ */
+
+body {
+    /* Colors 🎨 */
+    background: linear-gradient(180deg, rgb(244, 78, 183), teal, rgb(151, 65, 151), rgb(246, 246, 124)) no-repeat;
+    color: #2F2D29;
+    /* Space 🪐 */
+    height: 100vh;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 auto;
+ }
+
+ ul {
+    list-style: none;
+ }
+
+ a:not(.nes-btn) {
+   color: black;
+   text-decoration: underline;
+}
+
+/* HEADER 💀 */
+
+header {
+    display: flex;
+    /* Flexing 💪 */
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    /* Space 🪐 */
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+
+    & ul {
+      display: flex;
+      /* Flexing 💪 */
+      align-items: center;
+      flex-flow: row nowrap;
+      gap: 5vw;
+      justify-content: space-evenly;
+      /* Space 🪐 */
+      margin: 0 auto;
+  }
+}
+
+header.hero {
+   margin: 0 0 10vh;
+
+   .title {
+      font-size: 6vw;
+      /* Space 🪐 */
+      margin: 10vh 0 0 -50%;
+      transform: rotate(-18deg);
+   }
+
+   .details {
+      margin-top: 3vh;
+      width: 50%;
+    }
+
+   &> ul {
+      margin: 10vh 0 0 -30%;
+   }
+}
+
+ /* CONTENT 📖 */
+
+ section {
+   margin: 1em;
+ }
+
+ section.main {
+   display: flex;
+   /* Flexing 💪 */
+   flex-flow: row wrap;
+   align-items: stretch;
+   gap: 2vh;
+   justify-content: space-evenly;
+   /* Space 🪐 */
+   margin: 0 auto;
+   width: 100vw;
+
+    &> div {
+      /* Colors 🎨 */
+      background: darkgrey;
+      color: black;
+      border-bottom: 3px solid grey;
+      border-right: 3px solid grey;
+      border-radius: 4px;
+      box-shadow: 1px 1px 5px 1px darkslategrey;
+    }
+ }
+
+ .gameboy {
+   /* Colors 🎨 */
+   background: darkgrey;
+   color: black;
+   border-top: 3px solid grey;
+   border-left: 3px solid grey;
+   border-bottom: 10px solid grey;
+   border-right: 10px solid grey;
+   border-radius: 15px;
+   box-shadow: 3px 3px 10px 3px darkslategrey;
+   /* Space 🪐 */
+   display: inline;
+   float: left;
+   margin: 0.5em;
+   padding: 1em;
+   width: 25vw;
+
+   .brand {
+      margin: 0.5em 0 1.5em;
+      font-style: italic;
+   }
+
+   .screen {
+      background: seagreen;
+      border: solid grey;
+      border-radius: 5px;
+      padding: 1.5em;
+   }
+
+   .vents {
+      background: repeating-linear-gradient(
+         90deg,
+         darkgrey,
+         darkgrey 6px,
+         grey 6px,
+         grey 10px
+      );
+      border-radius: 15px;
+      float: right;
+      margin: 2em -0.5em 0.5em 0;
+      transform: rotate(-45deg);
+      height: 50px;
+      width: 75px;
+   }
+ }
+
+ .controls {
+    display: flex;
+    /* Flexing 💪 */
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    .middle-btns > button {
+      transform: rotate(-45deg);
+      /* Colors 🎨 */
+      background: grey;
+      /* Fonts 🔤 */
+      font-size: 0.5em;
+      margin: 8em 0 0 -2em;
+   }
+ }
+
+ .controls .d-pad {
+    margin: 0;
+    padding: 0;
+ }
+
+ .controls .d-pad .d-row {
+    clear: left;
+    display: block;
+ }
+
+ .controls .d-pad .d-row > * {
+    display: inline;
+    float: left;
+ }
+
+ .controls .d-pad .single {
+    margin: 0 1.5em;
+ }
+
+ .controls .d-pad .d-up,
+ .controls .d-pad .d-left,
+ .controls .d-pad .d-center,
+ .controls .d-pad .d-right,
+ .controls .d-pad .d-down {
+    /* Colors 🎨 */
+    background: grey;
+    /* Space 🪐 */
+    height: 1.5em;
+    padding-bottom: 0.25em;
+    width: 1.5em;
+    /* Fonts 🔤 */
+    line-height: 0.25em;
+    text-align: center;
+ }
+
+ .controls .d-pad .d-up {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid transparent;
+    border-right: 2px solid lightgrey;
+    border-bottom: 2px solid black;
+    transform: rotate(-90deg);
+ }
+
+ .controls .d-pad .d-left {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+ }
+
+ .controls .d-pad .d-center {
+    border: transparent;
+ }
+
+ .controls .d-pad .d-right {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid transparent;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+ }
+
+ .controls .d-pad .d-down {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid black;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+    transform: rotate(-90deg);
+ }
+
+ /* FOOTER 🦶 */
+
+ footer#footer {
+    display: flex;
+    /* Space 🪐 */
+    bottom: 0;
+    margin: 2em 1em;
+    position: fixed;
+    width: 100%;
+    /* Flexing 💪 */
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+ }
+
+footer .surprise {
+   visibility: hidden;
+}
+
+ /* TYPOGRAPHY 🔤 */
+
+ /* FORMS 📝 */
+
+ /* ANIMATIONS 📺 */
+
+ /* RESPONSIVE 📱 */
+ @media screen and (min-width: 50px) and (max-width: 650px) {
+   header, section.main {
+      width: 100%;
+   }
+
+   header.hero {
+      flex-flow: column;
+      margin: 0 auto;
+      &> .title {
+         font-size: 2.5em;
+         margin: 0 0 0 0.5em;
+         transform: rotate(0deg);
+      }
+      & .details{
+         margin: 0 auto;
+         width: 90%;
+      }
+      &> ul {
+         margin: 0;
+      }
+   }
+   .gameboy {
+      width: 350px;
+   }
+
+   footer#footer {
+      font-size: 1.5vh;
+      margin: 0 auto;
+      padding: 0 15px 10px;
+      position: relative;
+      flex-flow: column;
+   }
+ }
+
+ @media screen and (min-width: 650px) and (max-width: 1050px) {
+   header.hero {
+      & .details {
+         margin: -5em 0 0 0;
+      }
+   }
+ }
+
+ @media screen and (min-width: 650px) and (max-width: 1354px) {
+   header.hero {
+      margin: 0 0 2vh;
+      & .details {
+         margin: 0;
+      }
+      &> .title {
+         font-size: 5vh;
+         margin: 1em 0 0 -8em;
+      }
+
+      &> .nes-balloon {
+         top: 2vh;
+      }
+   }
+   .gameboy {
+      width: 350px;
+   }
+ }
+
+ /* OVERRIDES ☠️ */
+ a.nes-btn,
+.nes-container {
+    margin-bottom: 1em;
+}
+
+ @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    .nes-btn {
+        border-image-repeat: stretch;
+    }
+ }

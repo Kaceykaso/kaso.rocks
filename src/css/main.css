@@ -12,11 +12,25 @@ tbd
 
 body {
     /* Colors 🎨 */
-    background: linear-gradient(180deg, rgb(244, 78, 183), teal, rgb(151, 65, 151), rgb(246, 246, 124)) no-repeat;
+    background: linear-gradient(
+                  180deg, 
+                  rgb(244, 78, 183), 
+                  teal, 
+                  rgb(246, 246, 124), 
+                  rgb(151, 65, 151), 
+                  teal, 
+                  rgb(244, 78, 183)
+         ) repeat;
     color: #2F2D29;
     /* Space 🪐 */
     height: 100vh;
     margin: 0 auto;
+    /* Fonts 🔤 */
+    font-family: sans-serif;
+}
+
+.fonts-loaded body {
+    font-family: 'Press Start 2P';
 }
 
 p {
@@ -39,30 +53,92 @@ header {
     font-size: 1.5vw;
     /* Space 🪐 */
     float: right;
+    margin: 0.5em;
     padding: 1em;
     width: 40vw;
+
+    &.hero {
+      display: flex;
+      /* Flexing 💪 */
+      flex-flow: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      /* Space 🪐 */
+      float: none;
+      margin: 0 0 8vh 0;
+      transform: rotate(-18deg);
+      width: 100vw;
+    }
+
+    &> .details {
+      margin: 4vw 0 0 8vw;
+      width: 80vw;
+    }
+}
+
+header.hero .title,
+header.hero .shade {
+    font-size: 8vw;
+    position: absolute;
+    color: darkslategrey;
+}
+
+.fonts-loaded .hero .title {
+    /* Fonts 🔤 */
+    font-family: 'Bungee Spice', sans-serif;
+    letter-spacing: 0.80dvw;
+    /* Space 🪐 */
+    top: 8.25dvh;
+    left: 16.75dvw;
+    z-index: 3;
+}
+
+.fonts-loaded .hero .shade {
+    /* Fonts 🔤 */
+    font-family: 'Bungee Shade', sans-serif;
+    letter-spacing: 0dvw;
+    /* Space 🪐 */
+    top: 8.25dvh;
+    left: 15.75dvw;
+    z-index: 2;
 }
 
 header ul {
     display: flex;
     /* Flexing 💪 */
+    align-self: stretch;
     align-items: center;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+   /* Space 🪐 */
+
+   &.hero {
+      margin: 10vw 0 0 33vw;
+      width: 50%;
+   }
 }
 
  /* CONTENT 📖 */
 
- .main {
-    /* Colors 🎨 */
-    background: darkgrey;
-    color: black;
-    border-bottom: 3px solid grey;
-    border-right: 3px solid grey;
-    border-radius: 4px;
-    box-shadow: 1px 1px 5px 1px darkslategrey;
+ section.main {
+   display: flex;
+   /* Flexing 💪 */
+   flex-flow: row;
+   justify-content: space-around;
    /* Space 🪐 */
     margin: 0.5em;
+ }
+
+ header.main,
+ section.main > div {
+   /* Colors 🎨 */
+   background: darkgrey;
+   color: black;
+   border: transparent;
+   border-bottom: 3px solid grey;
+   border-right: 3px solid grey;
+   border-radius: 4px;
+   box-shadow: 1px 1px 5px 1px darkslategrey;
  }
 
  .gameboy {
@@ -80,7 +156,7 @@ header ul {
     float: left;
     margin: 0.5em;
     padding: 1em;
-    width: 40vw;
+    width: 30vw;
  
     .brand {
        margin: 0.5em 0 1.5em;
@@ -92,6 +168,12 @@ header ul {
        border: solid grey;
        border-radius: 5px;
        padding: 1.5em;
+
+       &> img {
+         height: 50%;
+         width: 50%;
+         margin: 0 -25% 0 25%;
+       }
     }
  
     .vents {
@@ -231,6 +313,7 @@ footer .surprise {
 
  /* TYPOGRAPHY 🔤 */
 
+
  /* FORMS 📝 */
 
  /* ANIMATIONS 📺 */
@@ -249,6 +332,12 @@ footer .surprise {
       font-size: 1.5vh;
       margin: 10px 0 0;
       padding: 0 15px 10px;
+      position: relative;
+   }
+ }
+
+ @media screen and (min-height: 600px) and (max-height: 800px) {
+   footer#footer {
       position: relative;
    }
  }
