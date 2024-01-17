@@ -65,27 +65,73 @@ header ul {
     margin: 0.5em;
  }
 
- section.main {
-    display: inline;
+ .gameboy {
+    /* Colors 🎨 */
+    background: darkgrey;
+    color: black;
+    border-top: 3px solid grey;
+    border-left: 3px solid grey;
+    border-bottom: 10px solid grey;
+    border-right: 10px solid grey;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 3px darkslategrey;
     /* Space 🪐 */
+    display: inline;
     float: left;
+    margin: 0.5em;
     padding: 1em;
-    width: 55vw;
- }
-
- .screen {
-    background: seagreen;
-    border: solid grey;
-    border-radius: 5px;
- }
-
- .controls {
-    display: flex;
-    /* Flexing 💪 */
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: space-evenly
- }
+    width: 40vw;
+ 
+    .brand {
+       margin: 0.5em 0 1.5em;
+       font-style: italic;
+    }
+ 
+    .screen {
+       background: seagreen;
+       border: solid grey;
+       border-radius: 5px;
+       padding: 1.5em;
+    }
+ 
+    .vents {
+       background: repeating-linear-gradient(
+          90deg,
+          darkgrey,
+          darkgrey 6px,
+          grey 6px,
+          grey 10px
+       );
+       border-radius: 15px;
+       float: right;
+       margin: 2em -0.5em 0.5em 0;
+       transform: rotate(-45deg);
+       height: 50px;
+       width: 75px;
+    }
+  }
+ 
+  .controls {
+     display: flex;
+     /* Flexing 💪 */
+     align-items: center;
+     flex-flow: row nowrap;
+     justify-content: space-evenly;
+ 
+     .middle-btns > button {
+       transform: rotate(-45deg);
+       /* Colors 🎨 */
+       background: grey;
+       /* Fonts 🔤 */
+       font-size: 0.5em;
+       margin: 8em 0 0 -2em;
+    }
+  }
+ 
+  .controls .d-pad {
+     margin: 0;
+     padding: 0;
+  }
 
  .controls .d-pad {
     margin: 0;
@@ -191,9 +237,8 @@ footer .surprise {
 
  /* RESPONSIVE 📱 */
  @media screen and (min-width: 50px) and (max-width: 650px) {
-   header.main, section.main {
+   header.main, section.main, .gameboy {
       display: block;
-      float: none;
       font-size: 0.5em;
       width: 95%;
    }
@@ -201,7 +246,6 @@ footer .surprise {
       margin-top: 10px;
    }
    footer#footer {
-      /*background: linear-gradient(0deg, white,80%, transparent);*/
       font-size: 1.5vh;
       margin: 10px 0 0;
       padding: 0 15px 10px;
