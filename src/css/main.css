@@ -320,14 +320,105 @@ footer .surprise {
  /* ANIMATIONS 📺 */
 
  /* RESPONSIVE 📱 */
- @media screen and (min-width: 50px) and (max-width: 650px) {
-   header.main, section.main, .gameboy {
-      display: block;
-      font-size: 0.5em;
-      width: 95%;
+ @media screen and (min-width: 50px) and (max-width: 375px) {
+   header.hero {
+      margin: 0 0 10vw 0;
+   }
+   header.hero > .details {
+      font-size: 0.6rem;
+      margin: 20px 0 0 10px;
+      width: 60%;
+   }
+   .fonts-loaded header.hero .title {
+      font-size: 3rem;
+      letter-spacing: 0.3rem;
+      top: 3rem;
+      left: 0.3rem;
+   }
+   .fonts-loaded header.hero .shade {
+      font-size: 3rem;
+      top: 3.1rem;
+      left: 0;
+   }
+   header.hero ul.hero {
+      margin: 70px 0 0 0;
+      width: auto;
    }
    section.main {
-      margin-top: 10px;
+      align-items: center;
+      flex-flow: column;
+      gap: 20px;
+      justify-content: center;
+   }
+   footer#footer {
+      font-size: 1.5vh;
+      margin: 10px 0 0;
+      padding: 0 15px 10px;
+      position: relative;
+   }
+ }
+ @media screen and (min-width: 376px) and (max-width: 430px) {
+   header.hero {
+      margin: 0 0 10vw 0;
+   }
+   header.hero > .details {
+      font-size: 0.6rem;
+      margin: 50px 0 0 10px;
+      width: 60%;
+   }
+   .fonts-loaded header.hero .title {
+      font-size: 3rem;
+      letter-spacing: 0.3rem;
+      top: 5rem;
+      left: 1.5rem;
+   }
+   .fonts-loaded header.hero .shade {
+      font-size: 3rem;
+      top: 5.1rem;
+      left: 1.2rem;
+   }
+   header.hero ul.hero {
+      margin: 80px 0 0 45px;
+      width: auto;
+   }
+   section.main {
+      align-items: center;
+      flex-flow: column;
+      gap: 20px;
+      justify-content: center;
+   }
+   footer#footer {
+      font-size: 1.5vh;
+      margin: 10px 0 0;
+      padding: 0 15px 10px;
+      position: relative;
+   }
+ }
+ @media screen and (min-width: 431px) and (max-width: 650px) {
+   header.hero {
+      margin: 0 0 10vw 0;
+   }
+   header.hero > .details {
+      font-size: 0.6rem;
+      margin: 1rem 0 0 1rem;
+   }
+   .fonts-loaded header.hero .title {
+      top: 6vw;
+      left: 17vw;
+   }
+   .fonts-loaded header.hero .shade {
+      top: 6vw;
+      left: 16.25vw;
+   }
+   header.hero ul.hero {
+      margin: 6vh 0 0 6vw;
+      width: auto;
+   }
+   section.main {
+      align-items: center;
+      flex-flow: column;
+      gap: 20px;
+      justify-content: center;
    }
    footer#footer {
       font-size: 1.5vh;
@@ -337,9 +428,49 @@ footer .surprise {
    }
  }
 
- @media screen and (min-height: 600px) and (max-height: 800px) {
+ @media screen and (min-width: 650px) and (max-width: 1000px) {
+   header.hero {
+      margin: 0 0 8vw 0;
+   }
+   header.hero > .details {
+      margin: 1rem 0 0 4rem;
+   }
+   .fonts-loaded header.hero .title {
+      top: inherit;
+      left: 8rem;
+   }
+   .fonts-loaded header.hero .shade {
+      top: inherit;
+      left: 7.65rem;
+   }
+   header.hero ul.hero {
+      margin: 12vw 0 0 15rem;
+   }
+   section.main {
+      align-items: center;
+      flex-flow: column;
+      gap: 20px;
+      justify-content: center;
+   }
    footer#footer {
       position: relative;
+   }
+ }
+
+ @media screen and (min-width: 1000px) and (max-width: 1250px) {
+   header.hero ul.hero {
+      margin: 12vw 0 0 33vw;
+   }
+ }
+
+ /* Gameboy specifically */
+ @media screen and (min-width: 50px) and (max-width: 1200px) {
+   section.main > .gameboy {
+      width: 350px;
+
+      &> .controls {
+         width: 300px;
+      }
    }
  }
 
