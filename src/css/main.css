@@ -115,6 +115,7 @@ header ul {
    &.hero {
       margin: 10vw 0 0 33vw;
       width: 50%;
+      z-index: 4;
    }
 }
 
