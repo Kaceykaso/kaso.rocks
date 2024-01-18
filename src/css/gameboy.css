@@ -1,0 +1,176 @@
+/**
+    kaso.rocks > css
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+**/
+
+/** IMPORTS **/
+
+
+ /* CONTENT 📖 */
+
+ .gameboy {
+    /* Colors 🎨 */
+    background: darkgrey;
+    color: black;
+    border-top: 3px solid grey;
+    border-left: 3px solid grey;
+    border-bottom: 10px solid grey;
+    border-right: 10px solid grey;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 3px darkslategrey;
+    /* Space 🪐 */
+    display: inline;
+    float: left;
+    margin: 0.5em;
+    padding: 1em;
+    width: 30vw;
+ 
+    .brand {
+       margin: 0.5em 0 1.5em;
+       font-style: italic;
+    }
+ 
+    .screen {
+       background: seagreen;
+       border: solid grey;
+       border-radius: 5px;
+       padding: 1.5em;
+
+       &> img {
+         height: 50%;
+         width: 50%;
+         margin: 0 -25% 0 25%;
+       }
+    }
+ 
+    .vents {
+       background: repeating-linear-gradient(
+          90deg,
+          darkgrey,
+          darkgrey 6px,
+          grey 6px,
+          grey 10px
+       );
+       border-radius: 15px;
+       float: right;
+       margin: 2em -0.5em 0.5em 0;
+       transform: rotate(-45deg);
+       height: 50px;
+       width: 75px;
+    }
+  }
+ 
+  .controls {
+     display: flex;
+     /* Flexing 💪 */
+     align-items: center;
+     flex-flow: row nowrap;
+     justify-content: space-evenly;
+ 
+     .middle-btns > button {
+       transform: rotate(-45deg);
+       /* Colors 🎨 */
+       background: grey;
+       /* Fonts 🔤 */
+       font-size: 0.5em;
+       margin: 8em 0 0 -2em;
+    }
+  }
+ 
+  .controls .d-pad {
+     margin: 0;
+     padding: 0;
+  }
+
+ .controls .d-pad {
+    margin: 0;
+    padding: 0;
+ }
+
+ .controls .d-pad .d-row {
+    clear: left;
+    display: block;
+ }
+
+ .controls .d-pad .d-row > * {
+    display: inline;
+    float: left;
+ }
+
+ .controls .d-pad .single {
+    margin: 0 1.5em;
+ }
+
+ .controls .d-pad .d-up,
+ .controls .d-pad .d-left,
+ .controls .d-pad .d-center,
+ .controls .d-pad .d-right,
+ .controls .d-pad .d-down {
+    /* Colors 🎨 */
+    background: grey;
+    /* Space 🪐 */
+    height: 1.5em;
+    padding-bottom: 0.25em;
+    width: 1.5em;
+    /* Fonts 🔤 */
+    line-height: 0.25em;
+    text-align: center;
+ }
+
+ .controls .d-pad .d-up {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid transparent;
+    border-right: 2px solid lightgrey;
+    border-bottom: 2px solid black;
+    transform: rotate(-90deg);
+ }
+
+ .controls .d-pad .d-left {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+ }
+
+ .controls .d-pad .d-center {
+    border: transparent;
+ }
+
+ .controls .d-pad .d-right {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid transparent;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+ }
+
+ .controls .d-pad .d-down {
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid black;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid black;
+    transform: rotate(-90deg);
+ }
+
+
+ .controls .middle-btns > button {
+    /* Colors 🎨 */
+    background: grey;
+    /* Fonts 🔤 */
+    font-size: 0.5em;
+ }
+
+
+ /* ANIMATIONS 📺 */
+
+ /* RESPONSIVE 📱 */
+
+ @media screen and (max-width: 1200px) {
+   section.main > .gameboy {
+      width: 350px;
+
+      &> .controls {
+         width: 300px;
+      }
+   }
+ }

@@ -2,11 +2,15 @@
     kaso.rocks > css
 	kaso.rocks | @kaceykaso
 	GNU GPL 3.0 license
-
-COLOR PALETTE
--------------
-tbd
 **/
+
+/** IMPORTS **/
+
+@import url("fonts.css");
+@import url("snowflakes.css");
+@import url("header.css");
+@import url("gameboy.css");
+@import url("footer.css");
 
 /* BODY 🧍‍♂️ */
 
@@ -46,92 +50,18 @@ p {
    text-decoration: underline;
 }
 
-/* HEADER 💀 */
-
-header {
-    display: inline;
-    font-size: 1.5vw;
-    /* Space 🪐 */
-    float: right;
-    margin: 0.5em;
-    padding: 1em;
-    width: 40vw;
-
-    &.hero {
-      display: flex;
-      /* Flexing 💪 */
-      flex-flow: column;
-      align-items: flex-start;
-      justify-content: space-between;
-      /* Space 🪐 */
-      float: none;
-      margin: 0 0 8vh 0;
-      transform: rotate(-18deg);
-      width: 100vw;
-    }
-
-    &> .details {
-      margin: 4vw 0 0 8vw;
-      width: 80vw;
-    }
-}
-
-header.hero .title,
-header.hero .shade {
-    font-size: 8vw;
-    position: absolute;
-    color: darkslategrey;
-}
-
-.fonts-loaded .hero .title {
-    /* Fonts 🔤 */
-    font-family: 'Bungee Spice', sans-serif;
-    letter-spacing: 0.80dvw;
-    /* Space 🪐 */
-    top: 8.25dvh;
-    left: 16.75dvw;
-    z-index: 3;
-}
-
-.fonts-loaded .hero .shade {
-    /* Fonts 🔤 */
-    font-family: 'Bungee Shade', sans-serif;
-    letter-spacing: 0dvw;
-    /* Space 🪐 */
-    top: 8.25dvh;
-    left: 15.75dvw;
-    z-index: 2;
-}
-
-header ul {
-    display: flex;
-    /* Flexing 💪 */
-    align-self: stretch;
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-   /* Space 🪐 */
-
-   &.hero {
-      margin: 10vw 0 0 33vw;
-      width: 50%;
-      z-index: 4;
-   }
-}
-
  /* CONTENT 📖 */
 
- section.main {
+section.main {
    display: flex;
    /* Flexing 💪 */
    flex-flow: row;
    justify-content: space-around;
    /* Space 🪐 */
     margin: 0.5em;
- }
+}
 
- header.main,
- section.main > div {
+section.main > div {
    /* Colors 🎨 */
    background: darkgrey;
    color: black;
@@ -140,337 +70,45 @@ header ul {
    border-right: 3px solid grey;
    border-radius: 4px;
    box-shadow: 1px 1px 5px 1px darkslategrey;
- }
-
- .gameboy {
-    /* Colors 🎨 */
-    background: darkgrey;
-    color: black;
-    border-top: 3px solid grey;
-    border-left: 3px solid grey;
-    border-bottom: 10px solid grey;
-    border-right: 10px solid grey;
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px 3px darkslategrey;
-    /* Space 🪐 */
-    display: inline;
-    float: left;
-    margin: 0.5em;
-    padding: 1em;
-    width: 30vw;
- 
-    .brand {
-       margin: 0.5em 0 1.5em;
-       font-style: italic;
-    }
- 
-    .screen {
-       background: seagreen;
-       border: solid grey;
-       border-radius: 5px;
-       padding: 1.5em;
-
-       &> img {
-         height: 50%;
-         width: 50%;
-         margin: 0 -25% 0 25%;
-       }
-    }
- 
-    .vents {
-       background: repeating-linear-gradient(
-          90deg,
-          darkgrey,
-          darkgrey 6px,
-          grey 6px,
-          grey 10px
-       );
-       border-radius: 15px;
-       float: right;
-       margin: 2em -0.5em 0.5em 0;
-       transform: rotate(-45deg);
-       height: 50px;
-       width: 75px;
-    }
-  }
- 
-  .controls {
-     display: flex;
-     /* Flexing 💪 */
-     align-items: center;
-     flex-flow: row nowrap;
-     justify-content: space-evenly;
- 
-     .middle-btns > button {
-       transform: rotate(-45deg);
-       /* Colors 🎨 */
-       background: grey;
-       /* Fonts 🔤 */
-       font-size: 0.5em;
-       margin: 8em 0 0 -2em;
-    }
-  }
- 
-  .controls .d-pad {
-     margin: 0;
-     padding: 0;
-  }
-
- .controls .d-pad {
-    margin: 0;
-    padding: 0;
- }
-
- .controls .d-pad .d-row {
-    clear: left;
-    display: block;
- }
-
- .controls .d-pad .d-row > * {
-    display: inline;
-    float: left;
- }
-
- .controls .d-pad .single {
-    margin: 0 1.5em;
- }
-
- .controls .d-pad .d-up,
- .controls .d-pad .d-left,
- .controls .d-pad .d-center,
- .controls .d-pad .d-right,
- .controls .d-pad .d-down {
-    /* Colors 🎨 */
-    background: grey;
-    /* Space 🪐 */
-    height: 1.5em;
-    padding-bottom: 0.25em;
-    width: 1.5em;
-    /* Fonts 🔤 */
-    line-height: 0.25em;
-    text-align: center;
- }
-
- .controls .d-pad .d-up {
-    border-top: 2px solid lightgrey;
-    border-left: 2px solid transparent;
-    border-right: 2px solid lightgrey;
-    border-bottom: 2px solid black;
-    transform: rotate(-90deg);
- }
-
- .controls .d-pad .d-left {
-    border-top: 2px solid lightgrey;
-    border-left: 2px solid lightgrey;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid black;
- }
-
- .controls .d-pad .d-center {
-    border: transparent;
- }
-
- .controls .d-pad .d-right {
-    border-top: 2px solid lightgrey;
-    border-left: 2px solid transparent;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
- }
-
- .controls .d-pad .d-down {
-    border-top: 2px solid lightgrey;
-    border-left: 2px solid black;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid black;
-    transform: rotate(-90deg);
- }
-
-
- .controls .middle-btns > button {
-    /* Colors 🎨 */
-    background: grey;
-    /* Fonts 🔤 */
-    font-size: 0.5em;
- }
-
- /* FOOTER 🦶 */
-
- footer#footer {
-    display: flex;
-    /* Space 🪐 */
-    bottom: 0;
-    margin: 2em 1em;
-    position: fixed;
-    width: 100%;
-    /* Flexing 💪 */
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
- }
-
-footer .surprise {
-   visibility: hidden;
 }
 
  /* TYPOGRAPHY 🔤 */
-
 
  /* FORMS 📝 */
 
  /* ANIMATIONS 📺 */
 
  /* RESPONSIVE 📱 */
- @media screen and (min-width: 50px) and (max-width: 375px) {
-   header.hero {
-      margin: 0 0 10vw 0;
-   }
-   header.hero > .details {
-      font-size: 0.6rem;
-      margin: 20px 0 0 10px;
-      width: 60%;
-   }
-   .fonts-loaded header.hero .title {
-      font-size: 3rem;
-      letter-spacing: 0.3rem;
-      top: 3rem;
-      left: 0.3rem;
-   }
-   .fonts-loaded header.hero .shade {
-      font-size: 3rem;
-      top: 3.1rem;
-      left: 0;
-   }
-   header.hero ul.hero {
-      margin: 70px 0 0 0;
-      width: auto;
-   }
+ @media screen and (max-width: 375px) {
    section.main {
       align-items: center;
       flex-flow: column;
       gap: 20px;
       justify-content: center;
-   }
-   footer#footer {
-      font-size: 1.5vh;
-      margin: 10px 0 0;
-      padding: 0 15px 10px;
-      position: relative;
    }
  }
  @media screen and (min-width: 376px) and (max-width: 430px) {
-   header.hero {
-      margin: 0 0 10vw 0;
-   }
-   header.hero > .details {
-      font-size: 0.6rem;
-      margin: 50px 0 0 10px;
-      width: 60%;
-   }
-   .fonts-loaded header.hero .title {
-      font-size: 3rem;
-      letter-spacing: 0.3rem;
-      top: 5rem;
-      left: 1.5rem;
-   }
-   .fonts-loaded header.hero .shade {
-      font-size: 3rem;
-      top: 5.1rem;
-      left: 1.2rem;
-   }
-   header.hero ul.hero {
-      margin: 80px 0 0 45px;
-      width: auto;
-   }
    section.main {
       align-items: center;
       flex-flow: column;
       gap: 20px;
       justify-content: center;
-   }
-   footer#footer {
-      font-size: 1.5vh;
-      margin: 10px 0 0;
-      padding: 0 15px 10px;
-      position: relative;
    }
  }
  @media screen and (min-width: 431px) and (max-width: 650px) {
-   header.hero {
-      margin: 0 0 10vw 0;
-   }
-   header.hero > .details {
-      font-size: 0.6rem;
-      margin: 1rem 0 0 1rem;
-   }
-   .fonts-loaded header.hero .title {
-      top: 6vw;
-      left: 17vw;
-   }
-   .fonts-loaded header.hero .shade {
-      top: 6vw;
-      left: 16.25vw;
-   }
-   header.hero ul.hero {
-      margin: 6vh 0 0 6vw;
-      width: auto;
-   }
    section.main {
       align-items: center;
       flex-flow: column;
       gap: 20px;
       justify-content: center;
    }
-   footer#footer {
-      font-size: 1.5vh;
-      margin: 10px 0 0;
-      padding: 0 15px 10px;
-      position: relative;
-   }
  }
-
- @media screen and (min-width: 650px) and (max-width: 1000px) {
-   header.hero {
-      margin: 0 0 8vw 0;
-   }
-   header.hero > .details {
-      margin: 1rem 0 0 4rem;
-   }
-   .fonts-loaded header.hero .title {
-      top: inherit;
-      left: 8rem;
-   }
-   .fonts-loaded header.hero .shade {
-      top: inherit;
-      left: 7.65rem;
-   }
-   header.hero ul.hero {
-      margin: 12vw 0 0 15rem;
-   }
+ @media screen and (min-width: 650px) {
    section.main {
       align-items: center;
       flex-flow: column;
       gap: 20px;
       justify-content: center;
-   }
-   footer#footer {
-      position: relative;
-   }
- }
-
- @media screen and (min-width: 1000px) and (max-width: 1250px) {
-   header.hero ul.hero {
-      margin: 12vw 0 0 33vw;
-   }
- }
-
- /* Gameboy specifically */
- @media screen and (min-width: 50px) and (max-width: 1200px) {
-   section.main > .gameboy {
-      width: 350px;
-
-      &> .controls {
-         width: 300px;
-      }
    }
  }
 

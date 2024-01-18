@@ -1,0 +1,55 @@
+/**
+    kaso.rocks > css
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+**/
+
+ /* FOOTER 🦶 */
+
+ footer#footer {
+    display: flex;
+    /* Space 🪐 */
+    bottom: 0;
+    margin: 2em 1em;
+    position: fixed;
+    width: 100dvw;
+    /* Flexing 💪 */
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+ }
+
+footer .surprise {
+   visibility: hidden;
+}
+
+ /* TYPOGRAPHY 🔤 */
+
+ /* FORMS 📝 */
+
+ /* ANIMATIONS 📺 */
+
+ /* RESPONSIVE 📱 */
+ @media screen and (max-width: 413px) {
+    footer#footer {
+        font-size: 0.75em;
+        flex-flow: row wrap;
+        margin: 0 auto;
+        padding: 0 10px;
+        position: relative;
+    }
+ }
+ @media screen and (min-width: 414px) and (max-width: 650px) {
+   footer#footer {
+      font-size: 1.5vh;
+      margin: 10px 0 0;
+      padding: 0 15px 10px;
+      position: relative;
+   }
+ }
+
+ @media screen and (min-width: 650px) {
+   footer#footer {
+      position: relative;
+   }
+ }

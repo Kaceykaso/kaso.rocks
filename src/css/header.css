@@ -1,0 +1,209 @@
+/**
+    kaso.rocks > css
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+**/
+
+/* HEADER 💀 */
+
+header {
+    display: inline;
+    font-size: 1.5vw;
+    /* Space 🪐 */
+    float: right;
+    margin: 0.5em;
+    padding: 1em;
+    width: 40vw;
+
+    &.hero {
+      display: flex;
+      /* Flexing 💪 */
+      flex-flow: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      /* Space 🪐 */
+      float: none;
+      margin: 0 0 8vh 0;
+      transform: rotate(-18deg);
+      width: 100vw;
+    }
+
+    &> .details {
+      margin: 4vw 0 0 8vw;
+      width: 80vw;
+    }
+}
+
+header.hero .title,
+header.hero .shade {
+    font-size: 8vw;
+    position: absolute;
+    color: darkslategrey;
+}
+
+.fonts-loaded .hero .title {
+    /* Fonts 🔤 */
+    font-family: 'Bungee Spice', sans-serif;
+    letter-spacing: 0.80dvw;
+    /* Space 🪐 */
+    top: 8.25dvh;
+    left: 16.75dvw;
+    z-index: 3;
+}
+
+.fonts-loaded .hero .shade {
+    /* Fonts 🔤 */
+    font-family: 'Bungee Shade', sans-serif;
+    letter-spacing: 0dvw;
+    /* Space 🪐 */
+    top: 8.25dvh;
+    left: 15.75dvw;
+    z-index: 2;
+}
+
+header ul {
+    display: flex;
+    /* Flexing 💪 */
+    align-self: stretch;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+   /* Space 🪐 */
+
+   &.hero {
+      margin: 10vw 0 0 33vw;
+      width: 50%;
+      z-index: 4;
+   }
+}
+
+ /* TYPOGRAPHY 🔤 */
+
+ /* FORMS 📝 */
+
+ /* ANIMATIONS 📺 */
+
+ /* RESPONSIVE 📱 */
+
+/* header */
+@media screen and (max-width: 650px) {
+    header.hero {
+       margin: 0 0 10vw 0;
+    }
+}
+@media screen and (min-width: 651px) {
+    header.hero {
+        margin: 0 0 8vw 0;
+    }
+}
+/* header details */
+@media screen and (max-width: 374px) {
+    header.hero > .details {
+       font-size: 0.6rem;
+       margin: 20px 0 0 10px;
+       width: 60%;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 430px) {
+    header.hero > .details {
+       font-size: 0.6rem;
+       margin: 50px 0 0 10px;
+    }
+}
+@media screen and (min-width: 431px) and (max-width: 650px) {
+    header.hero > .details {
+       font-size: 0.6rem;
+       margin: 1rem 0 0 1rem;
+    }
+}
+@media screen and (min-width: 651px) {
+    header.hero > .details {
+       margin: 1rem 0 0 4rem;
+    }
+}
+/* hero title & shade */
+@media screen and (max-width: 370px) {
+    .fonts-loaded header.hero .title {
+       font-size: 2.25rem;
+       letter-spacing: 0.22rem;
+       top: 3rem;
+       left: 20px;
+    }
+    .fonts-loaded header.hero .shade {
+       font-size: 2.25rem;
+       top: 3.15rem;
+       left: 15px;
+    }
+}
+@media screen and (min-width: 371px) and (max-width: 430px) {
+   .fonts-loaded header.hero .title {
+       font-size: 3rem;
+       letter-spacing: 0.3rem;
+       top: 5rem;
+       left: 0.5rem;
+   }
+   .fonts-loaded header.hero .shade {
+       font-size: 3rem;
+       top: 5.1rem;
+       left: 0.2rem;
+   }
+}
+@media screen and (min-width: 431px) and (max-width: 650px) {
+   .fonts-loaded header.hero .title {
+       top: 6vw;
+       left: 17vw;
+   }
+   .fonts-loaded header.hero .shade {
+       top: 6vw;
+       left: 16.25vw;
+   }
+}
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+   .fonts-loaded header.hero .title {
+      top: inherit;
+      left: 8rem;
+   }
+   .fonts-loaded header.hero .shade {
+      top: inherit;
+      left: 7.65rem;
+   }
+}
+@media screen and (min-width: 1441px) {
+   .fonts-loaded header.hero .title {
+       top: 3vw;
+       left: 10vw;
+   }
+   .fonts-loaded header.hero .shade {
+       top: 3vw;
+       left: 9vw;
+   }
+}
+/* header ul */
+@media screen and (max-width: 370px) {
+    header.hero ul.hero {
+       margin: 50px 0 0 0;
+       width: auto;
+    }
+}
+@media screen and (min-width: 371px) and (max-width: 430px) {
+    header.hero ul.hero {
+        margin: 90px 0 0 45px;
+        width: auto;
+    }
+}
+@media screen and (min-width: 431px) and (max-width: 650px) {
+    header.hero ul.hero {
+        margin: 6vh 0 0 6vw;
+        width: auto;
+    }
+}
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+    header.hero ul.hero {
+       margin: 12vw 0 0 15rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    header.hero ul.hero {
+       margin: 12vw 0 0 33vw;
+    }
+}
