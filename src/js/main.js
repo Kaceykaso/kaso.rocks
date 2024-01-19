@@ -41,9 +41,9 @@ const konamiGo = (code) => {
     const correct = ["up","up","down","down","left","right","left","right","b","a"];
     if (code.length === correct.length && code.every((element, index) => element === correct[index])) {
         gameboyImg.setAttribute("src", "src/assets/banana_dolphin_taco.png");
-        gameboyImg.classList.add('surprise');
+        gameboyImg.classList.add('fullImg');
         surprise.style.setProperty("display", "block");
-        surpriseLink[0].style.setProperty("visibility", "visible");
+        surpriseLink[0].style.setProperty("display", "block");
     }
 }
 

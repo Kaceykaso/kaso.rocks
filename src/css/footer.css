@@ -5,31 +5,35 @@
 **/
 
  /* FOOTER 🦶 */
-
+/* rgb(224, 2, 236) */
  footer#footer {
     display: flex;
-
-    background: darkslategrey;
-    color: rgb(207, 191, 165);
+    /* Colors 🎨 */
+    background: linear-gradient(to top, black 20%, transparent), url(https://grainy-gradients.vercel.app/noise.svg);
+    background-size: cover;
+    filter: contrast(170%) brightness(1000%);
+    mix-blend-mode: multiply;
     /* Space 🪐 */
     bottom: -2px;
+    height: 150px;
     left: 0;
-    padding: 2em 1em;
-    position: fixed;
+    padding: 2em 1em 1em;
+    position: static;
     right: 0;
     width: 100dvw;
     /* Flexing 💪 */
     flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-
+    align-items: flex-end;
+    justify-content: flex-end;
+   
+    &> p,
     &> p > a {
-      color: rgb(207, 191, 165);
+      color: white;
     }
  }
 
 footer .surprise {
-   visibility: hidden;
+   display: none;
 }
 
  /* TYPOGRAPHY 🔤 */
@@ -42,7 +46,7 @@ footer .surprise {
  @media screen and (max-width: 413px) {
     footer#footer {
         font-size: 0.75em;
-        flex-flow: row wrap;
+        flex-flow: column;
         padding: 20px 10px;
         position: relative;
     }
