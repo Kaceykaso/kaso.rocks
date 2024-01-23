@@ -7,13 +7,9 @@
 /* HEADER 💀 */
 
 header {
-    display: inline;
     font-size: 1.5vw;
     /* Space 🪐 */
-    float: right;
-    margin: 0.5em;
     padding: 1em;
-    width: 40vw;
 
     &.hero {
       display: flex;
@@ -31,6 +27,27 @@ header {
     &> .details {
       margin: 4vw 0 0 8vw;
       width: 80vw;
+    }
+
+    &.topbar {
+        display: flex;
+        /* Colors 🎨 */
+        background: linear-gradient(to bottom, black 20%, transparent), url(https://grainy-gradients.vercel.app/noise.svg);
+        background-size: cover;
+        color: teal;
+        filter: contrast(170%) brightness(1000%);
+        mix-blend-mode: multiply;
+        /* Flexing 💪 */
+        flex-flow: row wrap;
+        align-items: flex-start;
+        /* Space 🪐 */
+        height: 150px;
+        left: 0;
+        padding: 1em;
+        position: static;
+        right: 0;
+        top: 0;
+        width: 100dvw;
     }
 }
 
@@ -61,6 +78,11 @@ header.hero .shade {
     z-index: 2;
 }
 
+header.topbar .title {
+    /* Fonts 🔤 */
+    font-family: 'Bungee Shade', sans-serif;
+}
+
 header ul {
     display: flex;
     /* Flexing 💪 */
@@ -68,12 +90,20 @@ header ul {
     align-items: center;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-   /* Space 🪐 */
+   
 
    &.hero {
       margin: 10vw 0 0 33vw;
       width: 50%;
       z-index: 4;
+   }
+
+   &.topbar {
+        /* Flexing 💪 */
+        align-items: flex-start;
+        gap: 1em;
+        /* Space 🪐 */
+        margin-top: 1em;
    }
 }
 

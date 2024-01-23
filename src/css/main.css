@@ -16,7 +16,7 @@
 
 body {
     /* Colors 🎨 */
-    background: linear-gradient(180deg, teal, rgb(244, 78, 183), teal);
+    background: linear-gradient(180deg, teal, rgb(244, 78, 183), goldenrod, teal);
     color: #2F2D29;
     /* Space 🪐 */
     height: 100vh;
@@ -38,7 +38,6 @@ p {
  }
 
  a:not(.nes-btn) {
-   color: black;
    text-decoration: underline;
 }
 
