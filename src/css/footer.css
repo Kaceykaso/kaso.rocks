@@ -24,12 +24,30 @@
     /* Flexing 💪 */
     flex-flow: row nowrap;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
    
     &> p,
     &> p > a {
       color: white;
     }
+ }
+
+ footer#footer.packed {
+
+   &> p {
+      margin: 0;
+      padding-bottom: 12px;
+   }
+
+   &> ul {
+      display: flex;
+      /* Space 🪐 */
+      margin: 0;
+      /* Flexing 💪 */
+      flex-flow: row nowrap;
+      gap: 4vw;
+      justify-content: space-between;
+   }
  }
 
 footer .surprise {
