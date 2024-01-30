@@ -53,7 +53,7 @@ section.main {
     padding-bottom: 100px; /* give footer some breathing room */
 }
 
-section.main > div {
+section > div {
    /* Colors 🎨 */
    background: darkgrey;
    color: black;
@@ -61,10 +61,41 @@ section.main > div {
    border-bottom: 3px solid grey;
    border-right: 3px solid grey;
    border-radius: 4px;
-   box-shadow: 1px 1px 5px 1px darkslategrey;
+   box-shadow: 1px 1px 5px 1px darkslategrey; 
+}
+
+section.longform {
+   margin: 0 4vw;
+
+   &> div {
+      padding: 2vw;
+   }
+
+   & ul {
+      font: 1.5rem Arial, Helvetica, sans-serif;
+
+      &.keyvalue {
+         padding-left: 0;
+      }
+   }
+
+   & ul li {
+      padding-bottom: 15px;
+   }
+
+   & ul li p {
+      padding-left: 2vw;
+   }
+
+   & ul li ul {
+      list-style: circle;
+      margin-left: 2vw;
+   }
 }
 
  /* TYPOGRAPHY 🔤 */
+
+
 
  /* FORMS 📝 */
 
