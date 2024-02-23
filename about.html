@@ -21,18 +21,125 @@
 	<link rel="stylesheet" href="src/css/main.css" />
 </head>
 
-<body class="is-preload">
+<body class="is-preload about">
 
 	<header class="topbar">
 		<a href="./index.html" title="Want to see that amazing home screen again? Sure!"><h1 class="title">kaso.rocks</h1></a>
         <ul class="topbar">
+            <!--
             <li><a href="#" title="About Kacey Lewis - you are already here!" target="_self">about</a></li>
             <li><a href="uses.html" title="What Kacey uses, what this website uses" target="_self">uses</a></li>
+            -->
         </ul>
 	</header>
 
-    <section class="main">
-        
+    <section class="left no-scroll">
+        <div class="gameboy">
+            <div class="screen video">
+                <video poster="./src/assets/Kacey_Lewis_WIT_Portrait-poster.png" autoplay muted loop playsinline>
+                    <source id="gameboy-img" src="./src/assets/Kacey_Lewis_WIT_Portrait.mp4" type="video/mp4" alt="Kacey Lewis at LinkedIn, being a boss" />
+                </video>
+            </div>
+            <div class="brand">
+                Kaso GAMEGIRL
+            </div>
+            <div class="controls">
+                <div class="d-pad">
+                    <div class="d-row">
+                        <button type="button" class="d-up single" id="d-up" title="Up">❯</button>
+                    </div>
+                    <div class="d-row">
+                        <button type="button" class="d-left" id="d-left" title="Left">❮</button>
+                        <button type="button" class="d-center" title="Center"></button>
+                        <button type="button" class="d-right" id="d-right" title="Right">❯</button>
+                    </div>
+                    <div class="d-row">
+                        <button type="button" class="d-down single" id="d-down" title="Down">❮</button>
+                    </div>
+                </div>
+                <div class="middle-btns">
+                    <button type="button" id="start-btn" title="Start">Start</button>
+                    <button type="button" id="select-btn" title="Select">Select</button>
+                </div>
+                <div class="right-btns">
+                    <button type="button" class="nes-btn is-error" id="b-btn" title="B">B</button>
+                    <button type="button" class="nes-btn is-warning" id="a-btn" title="A">A</button>
+                </div>
+            </div>
+            <div class="vents"></div>
+        </div>
+    </section>
+    <section class="longform right scroll">
+        <div class="slim">
+            <h2><i>&#128588;</i> Hey, I'm Kacey (She/Her) <i>&#127881;</i></h2>
+            <p>I'm an engineering leader who constantly has one foot in design and one foot in code</p>
+            <ul class="quicklinks">
+                <li><a href="Kacey_Lewis-Resume.pdf" title="Kacey Lewis' resume(PDF)" target="_blank">Resume</a></li>
+                <li><a href="https://linkedin.com/in/kaceylewis" title="Kacey Lewis on LinkedIn" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Kaceykaso" title="Kacey Lewis on Github" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Too Much Screen Time</h3>
+            <p>
+                For the last 20+ years, my home has been in front of a screen - whether it's my monitor typing code, a different monitor playing video games, 
+                or my tablet drawing new designs - I consume a great deal of screen time. I became addicted to customizing whatever I had with my own designs and 
+                details early on, through making my own textures and patterns for The Sims in Photoshop. When a friend suggested I learn <strong>Macromedia Flash</strong>, it was all 
+                downhill - I not only taught myself how to make animations and websites with the then "cutting edge software", I dropped out of my animation program at 
+                The Art Institute of CA - Orange County, in order to go all in as a web designer.
+            </p><p>
+                After having established a decent fulltime gig as a freelance web designer for a few of years - I even worked as the <strong>webmaster for Autograph Collector Magazine</strong> - 
+                the Apple iPhone came out, and marked the eventual downfall of Flash. I went from convincing clients their website needed Flash animations and movies, to recommending 
+                JavaScript for all interactivity - as mobile was clearly the future, and that necessitated dropping Flash entirely. I worked hard to teach myself the <a title="LAMP: Linux, Apache, MySQL, PHP">LAMP</a> 
+                stack and built all new projects in that, before getting a real office gig.
+            </p>
+            <h3>Tech Industry Leader</h3>
+            <p>
+                I got my big break working for <a href="https://www.linkedin.com/" title="Linkedin.com" target="_blank">LinkedIn</a> before I had even finished my 
+                <a href="https://music-cms.ucsd.edu/ugrad/icam-major.html" title="Interdisplinary Computing and the Arts Major at UCSD" target="_blank">ICAM</a> 
+                program at <a href="https://ucsd.edu/" title="University of California in San Diego" target="_blank">UC San Diego</a>, and moved up to San Francisco. As a new UI Engineer, 
+                I quickly got offers to speak at conferences, write for <a href="https://en.wikipedia.org/wiki/Net_(magazine)" title="Former .Net Magazine, previously Web Designer Magazine" target="_blank">.Net Magazine</a>, 
+                and became a mentor within <a href="https://www.linkedin.com/showcase/linkedin-wit/" title="LinkedIn Women in Tech" target="_blank">LinkedIn's WIT group</a> and 
+                <a href="https://www.joinwest.org/" title="WEST Mentoring" target="_blank">WEST Mentoring</a>. This 
+                love for teaching out and helping others avoid common pitfalls of being a woman in tech led me to engineering management. As the Engineering Manager for 
+                the Horizontal UI Engineering team, my love of design and visual arts finally came full circle with my love of engineering. 
+                I built a team of web and 
+                native mobile engineers that were <strong>"Happy Warriors"</strong> (thanks <a href="https://tomdale.net/about-me/" title="Who is Tom Dale?" target="_blank">Tom Dale</a>) passionately defending the frontend - establishing best practices, building 
+                accessible UI components, and ensuring a consistent look and feel across all products and apps at LinkedIn.
+            </p>
+            <div class="band">
+                <h4>Fun Fact</h4>
+                <p>My senior project at UCSD was <a href="https://www.youtube.com/playlist?list=PLWnhVchApyJveY8cioEd4EkjYBgywtLct" title="Bob RossBot video playlist on YouTube" target="_blank">RossBot</a> 
+                    - an <a href="" title="iRobot Create robot" target="_blank">iRobot Create</a> with a <a href="" title="Raspberry Pi website" target="_blank">Raspberry Pi</a> 
+                    serving a chat client and taking instructions on what to "draw". 
+                    It was on  display for two days at the Visual Arts Dept gallery, where users could "chat" with Bob, and their requests were parsed and matched with 
+                    a script I had prewritten for the bot to execute - including <a href="https://youtu.be/RaNtYLwhB8o?si=jVcEH23Hct3vuSCB" title="Bob RossBot singing Imperial March on YouTube" target="_blank">singing the Imperial March from Star Wars</a>. 
+                    I won the ICAM Innovation Award for this in 2014.
+                </p>
+            </div>
+            <p>
+                Despite not having much time to code as a manager, I found ways to inject creativity and design into my job. I designed company shirts for Pycon and SRE Con, 
+                and made stickers for every team, project, and event I managed. I even designed and gifted a blanket and beanie for four teams after we "survived 2020".
+            </p>
+            <h3>Restless Hands</h3>
+            <p>
+                The web has always been a wild west, and web development continues to be, especially on the frontend. JavaScript frameworks and libraries continue to churn 
+                and evolve every year, with a new batch of hotness taking the industry by storm just as you have mastered the last batch. My love of Flash transitioned into 
+                love of PHP, then into a love of Bootstrap and jQuery, then EmberJS, and then a love of React and TypeScript; but what this all really shows is my love for 
+                tinkering and playing around with new tech. I have always loved playing with Arduinos and Raspberry Pi's, making Roombas' do my bidding, or giving an arcade 
+                cabinet new life. Always learning and playing with the new hot thing, and finding new ways to improve on old habits, as well as customizing the look and feel, 
+                is what drives me.
+            </p>
+            <h3>Chit Chat</h3>
+            <p>
+                I like talking to folks, and if after all this chatter you care to chat some more, hit me up!<br>
+                Feel free to <a href="https://linkedin.com/in/kaceylewis">message me on LinkedIn</a> or email me at <a href="mailto:mackovision@gmail.com" title="Email me?" target="_blank">mackovision@gmail.com</a>.
+            </p>
+            <h3>What Am I Using?</h3>
+            <p>
+                If you are curious what this website, or myself, is using - <a href="uses.html" title="What is Kacey using?">check it out</a>!
+            </p>
+        </div>
     </section>
 
 	<footer id="footer" class="packed">

@@ -8,6 +8,12 @@
 
 
  /* CONTENT 📖 */
+ body.about {
+   & .screen {
+      /* Colors 🎨 */
+      background: transparent;
+   }
+ }
 
  .gameboy {
     /* Colors 🎨 */
@@ -28,31 +34,48 @@
  
     .brand {
        margin: 0.5em 0 1.5em;
+       /* Fonts 🔤 */
        font-style: italic;
     }
  
     .screen {
+      /* Colors 🎨 */
        background: seagreen;
        border: solid grey;
        border-radius: 5px;
+       /* Space 🪐 */
        padding: 0;
 
        &> img {
+         /* Space 🪐 */
          height: 50%;
          width: 50%;
          margin: 0 -25% 0 25%;
          padding: 2rem 0;
 
          &.fullImg {
+            /* Space 🪐 */
             height: 100%;
             width: 100%;
             margin: 0 auto;
             padding: 0;
          }
        }
+
+       &.video {
+         /* Space 🪐 */
+         width: 33vw;
+
+         & video {
+            /* Space 🪐 */
+            height: 100%;
+            width: 100%;
+         }
+       }
     }
  
     .vents {
+      /* Colors 🎨 */
        background: repeating-linear-gradient(
           90deg,
           darkgrey,
@@ -60,6 +83,7 @@
           grey 6px,
           grey 10px
        );
+       /* Space 🪐 */
        border-radius: 15px;
        float: right;
        margin: 2em -0.5em 0.5em 0;
@@ -87,26 +111,31 @@
   }
  
   .controls .d-pad {
+   /* Space 🪐 */
      margin: 0;
      padding: 0;
   }
 
  .controls .d-pad {
+   /* Space 🪐 */
     margin: 0;
     padding: 0;
  }
 
  .controls .d-pad .d-row {
+   /* Space 🪐 */
     clear: left;
     display: block;
  }
 
  .controls .d-pad .d-row > * {
+   /* Space 🪐 */
     display: inline;
     float: left;
  }
 
  .controls .d-pad .single {
+   /* Space 🪐 */
     margin: 0 1.5em;
  }
 
@@ -127,6 +156,7 @@
  }
 
  .controls .d-pad .d-up {
+   /* Colors 🎨 */
     border-top: 2px solid lightgrey;
     border-left: 2px solid transparent;
     border-right: 2px solid lightgrey;
@@ -135,6 +165,7 @@
  }
 
  .controls .d-pad .d-left {
+   /* Colors 🎨 */
     border-top: 2px solid lightgrey;
     border-left: 2px solid lightgrey;
     border-right: 2px solid transparent;
@@ -142,10 +173,12 @@
  }
 
  .controls .d-pad .d-center {
+   /* Colors 🎨 */
     border: transparent;
  }
 
  .controls .d-pad .d-right {
+   /* Colors 🎨 */
     border-top: 2px solid lightgrey;
     border-left: 2px solid transparent;
     border-right: 2px solid black;
@@ -153,6 +186,7 @@
  }
 
  .controls .d-pad .d-down {
+   /* Colors 🎨 */
     border-top: 2px solid lightgrey;
     border-left: 2px solid black;
     border-right: 2px solid transparent;
@@ -174,11 +208,15 @@
  /* RESPONSIVE 📱 */
 
  @media screen and (max-width: 1200px) {
-   section.main > .gameboy {
+   section > .gameboy {
       width: 350px;
 
       &> .controls {
          width: 300px;
+      }
+
+      &> .screen.video {
+         width: auto;
       }
    }
  }

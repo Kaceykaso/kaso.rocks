@@ -64,39 +64,119 @@ section > div {
    box-shadow: 1px 1px 5px 1px darkslategrey; 
 }
 
+section {
+
+   &.scroll {
+      /* Space 🪐 */
+      margin: 0 1rem;
+      width: 60%;
+
+      &.longform {
+         /* Space 🪐 */
+         margin: 0 1rem;
+      }
+   }
+
+   &.no-scroll {
+      /* Space 🪐 */
+      position: fixed;
+      width: 38%;
+
+      &> .gameboy {
+         /* Space 🪐 */
+         width: auto;
+      }
+   }
+}
+
 section.longform {
+   /* Space 🪐 */
    margin: 0 4vw;
 
    &> div {
+      /* Space 🪐 */
       margin-bottom: 1vh;
       padding: 2vw;
+
+      &> *:not(h2,h3) {
+         /* Fonts 🔤 */
+         font: 1.5rem Arial, Helvetica, sans-serif;
+      }
+
+      &.slim {
+         padding: 0.25rem 2rem;
+      }
+   }
+
+   & p {
+      /* Space 🪐 */
+      margin: 15px 0;
    }
 
    & ul {
-      font: 1.5rem Arial, Helvetica, sans-serif;
 
       &.keyvalue {
+         /* Space 🪐 */
          padding-left: 0;
+      }
+
+      &.quicklinks {
+         display: flex;
+         /* Flexing 💪 */
+         flex-flow: row nowrap;
+         /* Space 🪐 */
+         padding: 0;
+
+         &> li {
+            /* Space 🪐 */
+            margin-right: 15px;
+         }
       }
    }
 
    & ul li {
+      /* Space 🪐 */
       padding-bottom: 15px;
    }
 
    & ul li p {
+      /* Space 🪐 */
       padding-left: 2vw;
    }
 
    & ul li ul {
       list-style: circle;
+      /* Space 🪐 */
       margin-left: 2vw;
    }
+
+   & .band {
+      /* Colors 🎨 */
+      border-top: inset 5px hotpink;
+      border-bottom: inset 5px hotpink;
+      /* Space 🪐 */
+      margin: 0 auto;
+      padding: 1rem;
+      width: 100%;
+   }
+}
+& .right {
+   /* Space 🪐 */
+   float: right;
+}
+
+& .left {
+   /* Space 🪐 */
+   float: left;
+   margin: 0.5rem;
 }
 
  /* TYPOGRAPHY 🔤 */
-
-
+ h2 > i,
+ h3 > i {
+   font-style: normal;
+   font-size: xxx-large;
+ }
 
  /* FORMS 📝 */
 
@@ -118,6 +198,18 @@ section.longform {
       flex-flow: column;
       gap: 20px;
       justify-content: center;
+   }
+ }
+
+ @media screen and (max-width: 1000px) {
+   body.about {
+      display: flex;
+      flex-flow: column;
+   }
+   section.left,
+   section.right {
+      position: relative;
+      width: 95%;
    }
  }
 
