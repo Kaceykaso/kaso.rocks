@@ -63,10 +63,15 @@
        }
 
        &.video {
+         /* Colors 🎨 */
+         border: none;
          /* Space 🪐 */
          width: 33vw;
 
          & video {
+            /* Colors 🎨 */
+            border: 8px solid grey;
+            border-radius: 5px;
             /* Space 🪐 */
             height: 100%;
             width: 100%;
@@ -200,6 +205,25 @@
     background: grey;
     /* Fonts 🔤 */
     font-size: 0.5em;
+ }
+
+ .cartridge {
+   background: none;
+   border: none;
+   box-shadow: none;
+
+   min-width: 38vw;
+
+   & .frame {
+      box-shadow: -50px -50px 0 -40px grey, 50px 50px 0 -40px grey;
+      width: 64%;
+      margin: 0 auto;
+
+      &> img {
+         height: 100%;
+         width: 100%;
+      }
+   }
  }
 
 

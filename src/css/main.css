@@ -169,6 +169,19 @@ section.longform {
    /* Space 🪐 */
    float: left;
    margin: 0.5rem;
+
+   &.no-scroll {
+      display: flex;
+      flex-flow: column;
+      gap: 5vh;
+   }
+}
+
+.message-list > .message {
+   &> div:not(.nes-balloon) {
+      display: inline-grid;
+      vertical-align: bottom;
+   }
 }
 
  /* TYPOGRAPHY 🔤 */
@@ -210,6 +223,10 @@ section.longform {
    section.right {
       position: relative;
       width: 95%;
+
+      &.no-scroll {
+         gap: 20px;
+      }
    }
  }
 

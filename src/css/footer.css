@@ -44,7 +44,9 @@
       display: flex;
       /* Space 🪐 */
       margin: 0;
+      padding-bottom: 15px;
       /* Flexing 💪 */
+      align-items: center;
       flex-flow: row nowrap;
       gap: 4vw;
       justify-content: space-between;
