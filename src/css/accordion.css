@@ -1,0 +1,105 @@
+/**
+    kaso.rocks > css
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+**/
+
+/* overrides & resets */
+section.longform > div.accordion {
+    background: none;
+    border: none;
+    margin-bottom: 200px; /* clear footer */
+    padding: 0;
+}
+
+.accordion {
+    --text: black;
+    --highlight: hotpink;
+    --shadow: rgb(164, 39, 101);
+    --secondary: rgb(72, 202, 245);
+    --content: darkgray;
+
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.accordion__drawer {
+    background: var(--text);
+    box-shadow: 5px 5px 0 var(--text);
+
+    &> input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &> input[type="checkbox"]:not(:checked) + .accordion__title:hover::after {
+        animation: bounce 0.5s;
+    }
+}
+
+.accordion__title {
+    background: var(--secondary);
+    border: 2px solid var(--text);
+    box-shadow: 5px 5px 0 var(--text);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.25em;
+    justify-content: space-between;
+    margin: 0 -10px 0 -10px;
+    padding: 0.5em 1em;
+    width: 100%;
+    transition: all ease-in-out 500ms;
+
+    &::after {
+        content: "\276F";
+        height: 1em;
+        text-align: center;
+        transform: rotate(90deg);
+        transition: all 300ms;
+        width: 1em;
+    }
+
+    &:hover {
+        background-color: var(--highlight);
+    }
+}
+
+.accordion__content {
+    background: var(--content);
+    display: none;
+    margin: 0 auto;
+    margin-right: 13px;
+    overflow: hidden;
+    padding: 1em;
+    transition: all 300ms;
+    width: 98%;
+}
+
+/**
+  * ACTIONS
+  */
+.accordion__drawer input[type="checkbox"]:checked ~ .accordion__content {
+    display: block;
+}
+
+.accordion__drawer input[type="checkbox"]:checked + .accordion__title {
+    background: var(--highlight);
+}
+
+.accordion__drawer input[type="checkbox"]:checked + .accordion__title::after {
+    transform: rotate(270deg);
+}
+
+/**
+  * ANIMATIONS
+  */
+@keyframes bounce {
+    25% {
+        transform: rotate(90deg) translate(0.25rem);
+    }
+    75% {
+        transform: rotate(90deg) translate(-0.25rem);
+    }
+}

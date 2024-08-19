@@ -11,7 +11,8 @@ function loadFonts () {
     if ('fonts' in document) {
         Promise.all([
           document.fonts.load('1em Bungee Spice'),
-          document.fonts.load('1em Bungee Shade')
+          document.fonts.load('1em Bungee Shade'),
+          document.fonts.load('1em Shadows Into Light')
         ]).then(_ => {
           document.documentElement.classList.add('fonts-loaded')
         });

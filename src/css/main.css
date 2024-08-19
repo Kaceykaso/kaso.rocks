@@ -73,6 +73,7 @@ section {
       &.longform {
          /* Space 🪐 */
          margin: 0 1rem;
+         margin-bottom: 200px; /* clear footer */
       }
    }
 
@@ -97,7 +98,7 @@ section.longform {
       margin-bottom: 1vh;
       padding: 2vw;
 
-      &> *:not(h2,h3) {
+      &> h4, p {
          /* Fonts 🔤 */
          font: 1.5rem Arial, Helvetica, sans-serif;
       }
@@ -186,6 +187,10 @@ section.longform {
       display: inline-grid;
       vertical-align: bottom;
    }
+
+   &> .nes-balloon.macpack {
+      vertical-align: top;
+   }
 }
 
  /* TYPOGRAPHY 🔤 */
@@ -193,6 +198,25 @@ section.longform {
  h3 > i {
    font-style: normal;
    font-size: xxx-large;
+ }
+
+ .title__retro,
+ section.longform > div.title__retro {
+   background: hotpink;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black;
+    font-size: 1.25em;
+    margin: 0 -10px 25px -10px;
+    padding: 0.5em 1em;
+    width: 100%;
+
+    & > p {
+      font-family: 'Shadows Into Light';
+      font-size: 1.5em;
+      font-style: italic;
+      font-weight: 800;
+      padding: 0;
+    }
  }
 
  /* FORMS 📝 */

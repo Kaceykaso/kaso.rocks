@@ -24,3 +24,11 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('../assets/fonts/ShadowsIntoLightTwo-Regular.woff2') format('woff2'),
+         url('../assets/fonts/ShadowsIntoLightTwo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

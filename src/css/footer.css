@@ -33,7 +33,7 @@
  }
 
  footer#footer.packed {
-   position: static;
+   position: fixed;
    
    &> p {
       margin: 0;
