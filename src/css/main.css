@@ -65,7 +65,6 @@ section > div {
 }
 
 section {
-
    &.scroll {
       /* Space 🪐 */
       margin: 0 1rem;
@@ -160,6 +159,7 @@ section.longform {
       width: 100%;
    }
 }
+
 & .right {
    /* Space 🪐 */
    float: right;
@@ -175,6 +175,10 @@ section.longform {
       flex-flow: column;
       gap: 5vh;
    }
+}
+
+.macpack-img {
+   width: 40vw;
 }
 
 .message-list > .message {
@@ -205,12 +209,16 @@ section.longform {
       padding-bottom: 0;
    }
  }
- @media screen and (min-width: 650px) and (max-width: 1100px) {
+ @media screen and (min-width: 650px) and (max-width: 1000px) {
    section.main {
       align-items: center;
       flex-flow: column;
       gap: 20px;
       justify-content: center;
+   }
+   section.left > img.macpack-img {
+      margin: 0 auto;
+      width: 60vw;
    }
  }
 
@@ -227,6 +235,10 @@ section.longform {
 
       &.no-scroll {
          gap: 20px;
+      }
+
+      > .macpack-img {
+         width: 40vw;
       }
    }
  }
