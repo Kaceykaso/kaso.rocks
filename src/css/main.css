@@ -215,7 +215,8 @@ section.longform {
  }
 
  @media screen and (max-width: 1000px) {
-   body.about {
+   body.about,
+   body.macpack {
       display: flex;
       flex-flow: column;
    }
