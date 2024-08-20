@@ -54,7 +54,7 @@ section.longform > div.accordion {
 
     &::after {
         content: "\276F";
-        height: 1em;
+        height: 2em;
         text-align: center;
         transform: rotate(90deg);
         transition: all 300ms;
@@ -75,6 +75,10 @@ section.longform > div.accordion {
     padding: 1em;
     transition: all 300ms;
     width: 98%;
+
+    &> ul li {
+        font: 1.25rem Arial, Helvetica, sans-serif;
+    }
 }
 
 /**

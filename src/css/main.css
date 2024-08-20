@@ -178,10 +178,6 @@ section.longform {
    }
 }
 
-.macpack-img {
-   width: 40vw;
-}
-
 .message-list > .message {
    &> div:not(.nes-balloon) {
       display: inline-grid;
@@ -191,6 +187,16 @@ section.longform {
    &> .nes-balloon.macpack {
       vertical-align: top;
    }
+}
+
+/* IMAGES */
+.macpack-img {
+   width: 40vw;
+}
+
+.img__icon {
+   margin-bottom: 8px;
+   width: 1em;
 }
 
  /* TYPOGRAPHY 🔤 */
