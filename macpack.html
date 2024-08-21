@@ -56,11 +56,17 @@
                 <div class="accordion__content">
                     <p>
                         <ul>
-                            <li>TL;DR: Macintosh SE (case only, off <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=macintosh+se&_sacat=0">eBay</a>), <a href="https://www.etsy.com/listing/1377485134/macintosh-9-inch-crt-to-lcd-bracket">LCD bracket from Etsy</a>.</li>
+                            <li>TL;DR: Macintosh SE (case only, off <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=macintosh+se&_sacat=0">eBay</a>), <a href="https://www.etsy.com/listing/1377485134/macintosh-9-inch-crt-to-lcd-bracket">LCD bracket from Etsy</a>,
+                             and a few panel mounted USB ports.</li>
                             <li>Macintosh SE (shell): This started out as an original Macintosh SE case, bought as a shell only - no internals at all - off <a href="√https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=macintosh+se&_sacat=0">eBay</a>. I've actually had this for years, with a 
                         similar set of components inside.</li>
                             <li>LCD bracket: There's a lot of <a href="https://www.printables.com/model/876743-macintosh-aio-9-inch-lcd-bracket-rev-4">STL files floating around</a> to print your own LCD bracket to replace the CRT in any Macintosh 128k/512k/Plus/Classic/SE, but at the time of building this, I didn't have
                         a 3D printer, so I bought one already printed off <a href="https://www.etsy.com/listing/1377485134/macintosh-9-inch-crt-to-lcd-bracket">Etsy</a>. After fitting it into the case's faceplate, I used <a href="https://www.acehardware.com/departments/automotive-rv-and-marine/auto-tools-and-maintenance/auto-body-repair/89699">Bondo Spot Putty</a> to fill in the gaps before painting.</li>
+                            <li>USB Ports: I wanted to make use of all the holes in the back of the case, so I got some flush panel mount USB ports, that would be connected to the pi inside the case, and would allow me to optional plug in USB cables as needed from the outside of the case. 
+                                I went with one <a href="https://www.amazon.com/dp/B09FL99YL6">2-port USB-A panel mount connector</a>, and two <a href="https://www.amazon.com/dp/B0BQHHJB4S">USB-C flush panel mount cables</a> which fit perfectly in the holes in the bottom of the case. Ok, I did had to Dremel the holes a tiny bit wider to fit. One is used as a dedicated power adapter.
+                            </li>
+                            <li>Power Switch: I wanted a big fat rocker switch on the back to turn the whole thing on and off, so I bought <a href="https://www.amazon.com/dp/B0C1N8Y86Z?th=1">one (or 5) off Amazon</a>. I think soldered some long wires to only 2 of the 4 pins on the rocker switch and connected them to the Pi's GPIO pins (pins 5 and 6 specifically), and used the script from 
+                            <a href="https://howchoo.com/pi/how-to-add-a-power-button-to-your-raspberry-pi/?utm_source=youtube&utm_medium=referral&utm_campaign=power-button-video&utm_content=description">HowChoo's Raspberry Pi power button tutorial</a>.</li>
                         </ul>
                     </p>
                 </div>
@@ -82,6 +88,10 @@
                             <li>LCD Monitor: I used a <a href="https://www.adafruit.com/product/1287?gad_source=1&gclid=CjwKCAjw74e1BhBnEiwAbqOAjN6eeZg2bmpPsiOtPJELilZ6QdNnkxeFC703h2TPuDGR1BuAFTyaXRoChREQAvD_BwE">10inch LCD from Adafruit</a>, and replaced the default AC power adapter with a <a href="https://www.amazon.com/dp/B074R7FDCR">USB-to-barrel converter</a> so that it could be run off the battery.</li>
                             <li>Battery: The battery I chose was the <a href="https://www.amazon.com/dp/B0BYP2F3SG">Anker Power Bank</a> - arguably overpowered for this, but I wanted a battery with <strong>pass-through charging</strong> - so that I would only have 1 USB-C cable coming out the 
                                 back. This could run all the components off power AND charge the battery at the same time when plugged in.</li>
+                            <li>Speakers: I already had a cheap pair of desktop USB speakers off Amazon (no longer available, but <a href="https://www.amazon.com/MANHATTAN-2600-Speaker-System-161435/dp/B005LW42MY/ref=sr_1_7_sspa">something like these</a>), that used USB for power and headphone jack for audio, with a volume dial. I tore off the plastic housing for the 
+                                speakers, screwed them to a plexiglass plate that I screwed to the inside of the Mac's faceplate, and positioned the volume dial where the Mac's original screen brightness dial used to be.</li>
+
+                            </li>
                         </ul>
                     </p>
                 </div>
@@ -101,8 +111,8 @@
                                 Making my own Emulationstation theme was fairly easy, thanks to their <a href="https://retropie.org.uk/docs/Creating-Your-Own-EmulationStation-Theme/">great documentation</a>, and the <a href="https://retropie.org.uk/forum/topic/5552/release-amiga-workbench-emulationstation-theme">Amiga Workbench theme</a> 
                                 for the inspiration (hence where then name 'macbench' comes from).</li>
                             <li>Honorable Mention - Macintosh emulator: Despite RetroPie doing a lot of the work for you, some emulators take some configuring. I used the <a href="https://www.gryphel.com/c/minivmac/">Mini vMac</a> emulator (<a href="https://retropie.org.uk/docs/Macintosh/">as opposed to Basiliskll</a>),
-                            but needed to recompile it for my specific screen size and needs (arm build did not immediately work). I also wanted 2 different versions: default Mini vMac Macintosh Plus (black & white), along with a Macintosh Classic II (color) side by side.
-                            Learning how to <a href="https://www.gryphel.com/c/minivmac/build.html">compile</a> the Mini vMac (on the RPI no less) was it's own adventure and side-quest, but I tackled that mini boss and chugged on.</li>
+                                but needed to recompile it for my specific screen size and needs (arm build did not immediately work). I also wanted 2 different versions: default Mini vMac Macintosh Plus (black & white), along with a Macintosh Classic II (color) side by side.
+                                Learning how to <a href="https://www.gryphel.com/c/minivmac/build.html">compile</a> the Mini vMac (on the RPI no less) was it's own adventure and side-quest, but I tackled that mini boss and chugged on.</li>
                         </ul>
                     </p>
                 </div>

@@ -238,6 +238,10 @@ section.longform {
       justify-content: center;
       padding-bottom: 0;
    }
+   section.left.no-scroll > img.macpack-img {
+      margin: 0 auto;
+      width: 70vw;
+   }
  }
  @media screen and (min-width: 650px) and (max-width: 1000px) {
    section.main {
@@ -265,10 +269,6 @@ section.longform {
 
       &.no-scroll {
          gap: 20px;
-      }
-
-      > .macpack-img {
-         width: 40vw;
       }
    }
  }
