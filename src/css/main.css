@@ -35,6 +35,7 @@ p {
 
  ul {
     list-style: none;
+    padding-inline-start: 20px;
  }
 
  a:not(.nes-btn) {
@@ -199,6 +200,18 @@ section.longform {
    width: 1em;
 }
 
+.img__gallery {
+   display: flex;
+   flex-flow: row wrap;
+   gap: 10px;
+   justify-content: flex-start;
+
+   & img.img__thumb {
+      border: 2px solid yellow;
+      height: 3em;
+   }
+}
+
  /* TYPOGRAPHY 🔤 */
  h2 > i,
  h3 > i {
@@ -284,3 +297,4 @@ section.longform {
         border-image-repeat: stretch;
     }
  }
+
