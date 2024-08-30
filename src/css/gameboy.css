@@ -48,18 +48,10 @@
 
        &> img {
          /* Space 🪐 */
-         height: 50%;
-         width: 50%;
-         margin: 0 -25% 0 25%;
-         padding: 2rem 0;
-
-         &.fullImg {
-            /* Space 🪐 */
-            height: 100%;
-            width: 100%;
-            margin: 0 auto;
-            padding: 0;
-         }
+         height: 100%;
+         width: 100%;
+         margin: 0 auto;
+         padding: 0;
        }
 
        &.video {

@@ -1,5 +1,5 @@
 /**
- *  kaso.rocks > main.js
+ *  kaso.rocks > konami_surprise.js
  *	kaso.rocks | @kaceykaso
  *	GNU GPL 3.0 license
  */
@@ -19,7 +19,6 @@ const surprise = document.getElementById("surprise");
 const surpriseLink = document.getElementsByClassName("surprise");
 const gameboyImg = document.getElementById("gameboy-img");
 let code = [];
-
 
 /** Clicks and clacks */
 Object.keys(btns).forEach(key => {
@@ -41,7 +40,6 @@ const konamiGo = (code) => {
     const correct = ["up","up","down","down","left","right","left","right","b","a"];
     if (code.length === correct.length && code.every((element, index) => element === correct[index])) {
         gameboyImg.setAttribute("src", "src/assets/banana_dolphin_taco.png");
-        gameboyImg.classList.add('fullImg');
         surprise.style.setProperty("display", "block");
         surpriseLink[0].style.setProperty("display", "block");
     }

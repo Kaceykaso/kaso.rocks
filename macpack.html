@@ -35,7 +35,9 @@
 	</header>
 
     <section class="left no-scroll">
-        <img class="macpack-img" src="src/assets/macpack_promo.png" alt="MacPack image, showing original Macintosh SE case painted light blue, yellow, pink, and purple; with backpack straps and an old clear telephone attached." />
+        <img class="img__macpack computer" src="src/assets/macpack_promo.png" alt="MacPack image, showing original Macintosh SE case painted light blue, yellow, pink, and purple; with backpack straps and an old clear telephone attached." />
+        <img id="macpack_promo_screensaver" class="img__macpack screensaver__hide" src="src/assets/macpack_promo_screensaver.gif" alt="Macpack screensaver image" />
+        <img class="img__macpack desktop" src="src/assets/macpack_promo_desktop.png" alt="Macpack desktop screen image"  />
     </section>
     
     <section class="longform right scroll">
@@ -93,8 +95,8 @@
                         <ul>
                             <li>TL;DR: Macintosh SE (case only, off <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=macintosh+se&_sacat=0">eBay</a>), <a href="https://www.etsy.com/listing/1377485134/macintosh-9-inch-crt-to-lcd-bracket">LCD bracket from Etsy</a>,
                              and a few panel mounted USB ports.</li>
-                            <li>Macintosh SE (shell): This started out as an original Macintosh SE case, bought as a shell only - no internals at all - off <a href="√https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=macintosh+se&_sacat=0">eBay</a>. I've actually had this for years, with a 
-                        similar set of components inside.</li>
+                            <li>Macintosh SE (shell): This started out as an original Macintosh SE case, shell only - no internals at all. I've actually had this for years, with a 
+                        similar set of components inside, but if you don't - maybe try <a href="√https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=macintosh+se&_sacat=0">eBay</a>?</li>
                             <li>LCD bracket: There's a lot of <a href="https://www.printables.com/model/876743-macintosh-aio-9-inch-lcd-bracket-rev-4">STL files floating around</a> to print your own LCD bracket to replace the CRT in any Macintosh 128k/512k/Plus/Classic/SE, but at the time of building this, I didn't have
                         a 3D printer, so I bought one already printed off <a href="https://www.etsy.com/listing/1377485134/macintosh-9-inch-crt-to-lcd-bracket">Etsy</a>. After fitting it into the case's faceplate, I used <a href="https://www.acehardware.com/departments/automotive-rv-and-marine/auto-tools-and-maintenance/auto-body-repair/89699">Bondo Spot Putty</a> to fill in the gaps before painting.</li>
                             <li>USB Ports: I wanted to make use of all the holes in the back of the case, so I got some flush panel mount USB ports, that would be connected to the pi inside the case, and would allow me to optional plug in USB cables as needed from the outside of the case. 
@@ -106,6 +108,7 @@
                                 Since the rocker switch was slightly too small to snuggly fit in the hole in th back of the case, I had to improvise with a piece of plastic. I cut a square plastic collar for the rocker switch, painted it to match the case, and gorilla glued it to the rocker switch.</li>
                             <li>Straps: I just cut off the straps from a neon multicolor Jansport backpack, but any backpack straps will do here. I sewed the tops of both straps together in a "V", sewed those to an additional bit of strap, then poked the long M4 case screws through those to attach everything to 
                                 the case under the top handle. The bottom of the straps I poked through the bottom vents on each side (I did have to Dremel out one slit on each side), and then sewed a button on each strap inside, to ensure the strap wouldn't come out.</li>
+                            
                         </ul>
                     </p>
                 </div>
@@ -328,7 +331,7 @@
 
 	<!-- Scripts -->
     <script type="text/javascript" src="src/js/fonts.js"></script>
-	<script type="text/javascript" src="src/js/main.js"></script>
+	<script type="text/javascript" src="src/js/screensaver_surprise.js"></script>
 </body>
 
 </html>

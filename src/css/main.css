@@ -191,8 +191,31 @@ section.longform {
 }
 
 /* IMAGES */
-.macpack-img {
+.img__macpack {
    width: 40vw;
+   visibility: visible;
+
+   &.computer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+   }
+
+   &#macpack_promo_screensaver {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+   }
+
+   &.desktop {
+      z-index: inherit;
+   }
+
+   &.screensaver__hide {
+      visibility: hidden;
+   }
 }
 
 .img__icon {
