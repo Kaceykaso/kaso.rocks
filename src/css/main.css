@@ -242,6 +242,20 @@ section.longform {
    font-size: xxx-large;
  }
 
+ h1.title__page {
+   font-family: 'Bungee Spice', sans-serif;
+   font-size: 4rem;
+   margin: 0 auto;
+   transform: skew(-12deg) rotate(-12deg);
+   text-shadow: 1vmin 1vmin 0 darkslategrey;
+ }
+
+ h3.subtitle {
+   font-family: 'Shadows Into Light';
+   margin: 0 auto 50px;
+   transform: skew(-12deg) rotate(-12deg);
+ }
+
  .title__retro,
  section.longform > div.title__retro {
    background: hotpink;

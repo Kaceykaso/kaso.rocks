@@ -1,0 +1,89 @@
+/**
+    kaso.rocks > css
+	kaso.rocks | @kaceykaso
+	GNU GPL 3.0 license
+**/
+
+section.path {
+    display: flex;
+    flex-flow: column;
+    padding: 0 10%;
+
+    &> div {
+        background: none;
+        border: revert;
+        border-radius: revert;
+        box-shadow: revert;
+    }
+
+    &> .left {
+        align-self: flex-start;
+        background: rgb(25, 193, 254);
+    }
+
+    &> .right {
+        align-self: flex-end;
+        background: hotpink;
+    }
+
+    &> .left,
+    &> .right {
+        border: 2px solid black;
+        box-shadow: 5px 5px 0 black;
+        padding: 10px;
+    }
+
+    .node {
+        max-height: 40dvh;
+        transition: all ease-in-out 500ms;
+
+        &.node__path {
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 0 auto;
+        }
+
+        & img {
+            height: 200px;
+            float: left;
+        }
+
+        &> a.heading {
+            color: black;
+            font-family: 'Bungee Shade', sans-serif;
+            font-size: 2em;
+            text-wrap: nowrap;
+        }
+
+        &> p {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1.5em;
+            margin: revert;
+        }
+    }
+
+    .node__path > div:nth-child(2) {
+        margin: 48px 0 0 -95px;
+    }
+
+    & div.line {
+        width: 500px; 
+        height: 100px;  
+        border: dotted 5px #000;
+        border-color: #000 transparent transparent transparent;
+        border-radius: 50%/100px 100px 0 0;
+        transform: rotate(190deg);
+    }
+
+    & div.line__reverse {
+        width: 500px; 
+        height: 100px;  
+        border: dotted 5px #000;
+        border-color: #000 transparent transparent transparent;
+        border-radius: 50%/100px 100px 0 0;
+    }
+}
+
+.node:not(.node__path):hover {
+    background: yellow;
+}
