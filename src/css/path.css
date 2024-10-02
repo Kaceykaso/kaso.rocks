@@ -53,6 +53,7 @@ section.path {
             font-family: 'Bungee Shade', sans-serif;
             font-size: 2em;
             text-wrap: nowrap;
+            text-decoration: none;
         }
 
         &> p {
