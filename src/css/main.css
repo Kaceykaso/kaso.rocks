@@ -247,12 +247,12 @@ section.longform {
    font-size: 4rem;
    margin: 0 auto;
    transform: skew(-12deg) rotate(-12deg);
-   text-shadow: 1vmin 1vmin 0 darkslategrey;
+   text-shadow: 5px 5px 0 darkslategrey;
  }
 
  h3.subtitle {
    font-family: 'Shadows Into Light';
-   margin: 0 auto 50px;
+   margin: -15px auto 50px;
    transform: skew(-12deg) rotate(-12deg);
  }
 

@@ -5,25 +5,32 @@
 **/
 
 section.path {
+    --pink: rgb(252, 55, 183);
+    --cyan: rgb(0, 153, 255);
+    --yellow: rgb(255, 221, 1);
+    --teal: rgb(10, 217, 169);
+    --purple: rgb(156, 6, 242);
+    --orange: rgb(255, 166, 0);
+
     display: flex;
     flex-flow: column;
-    padding: 0 10%;
+    padding: 0 10% 200px;
 
     &> div {
         background: none;
         border: revert;
         border-radius: revert;
         box-shadow: revert;
+        max-height: 40dvh;
+        transition: all ease-in-out 500ms;
     }
 
     &> .left {
         align-self: flex-start;
-        background: rgb(25, 193, 254);
     }
 
     &> .right {
         align-self: flex-end;
-        background: hotpink;
     }
 
     &> .left,
@@ -34,18 +41,11 @@ section.path {
     }
 
     .node {
-        max-height: 40dvh;
-        transition: all ease-in-out 500ms;
-
-        &.node__path {
-            display: flex;
-            flex-flow: row nowrap;
-            margin: 0 auto;
-        }
 
         & img {
             height: 200px;
             float: left;
+            margin-right: 15px;
         }
 
         &> a.heading {
@@ -63,9 +63,25 @@ section.path {
         }
     }
 
+    .node__path {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 auto;
+
+        &.flip {
+            transform: rotateX(180deg);
+        }
+    }
+
     .node__path > div:nth-child(2) {
         margin: 48px 0 0 -95px;
     }
+
+    .node:nth-of-type(1) { background: var(--pink); }
+    .node:nth-of-type(2) { background: var(--cyan); }
+    .node:nth-of-type(3) { background: var(--yellow); }
+    .node:nth-of-type(4) { background: var(--teal); }
+    .node:nth-of-type(5) { background: var(--purple); }
 
     & div.line {
         width: 500px; 
@@ -85,6 +101,6 @@ section.path {
     }
 }
 
-.node:not(.node__path):hover {
-    background: yellow;
+section.path > div.node:not(.node__path):hover {
+    background: var(--orange);
 }
