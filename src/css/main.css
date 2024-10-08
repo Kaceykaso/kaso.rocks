@@ -219,6 +219,11 @@ section.longform {
    &.hide {
       visibility: hidden;
    }
+
+   &.retrokade {
+      margin: 0 auto;
+      width: 25vw;
+   }
 }
 
 .img__icon {
