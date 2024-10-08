@@ -1,0 +1,127 @@
+/**
+ *  kaso.rocks > image_viewer.js
+ *	kaso.rocks | @kaceykaso
+ *	GNU GPL 3.0 license
+ */
+
+.img__gallery {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: flex-start;
+
+    &> .img__gallery__image {
+        box-sizing: border-box;
+    }
+}
+
+button.img__gallery__thumb {
+    background: none;
+    border: 0;
+    padding: 0.25em;
+
+    &> img.img__thumb {
+        border: 2px solid yellow;
+        height: 3em;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.modal > .modal__inner {
+    box-sizing: border-box;
+    padding: 1em;
+    height: 100%;
+    max-height: 512px;
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    &> img {
+        position: relative;
+        max-height: 100%;
+        max-width: 100%;
+        z-index: 1;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+    }
+}
+
+.modal__inner > .modal__controls {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    & button {
+        box-sizing: border-box;
+        cursor: pointer;
+        background: #333333;
+        color: white;
+        border: 0;
+        padding: 0.5em 0.75em;
+        margin: 0.25em;
+        border-radius: 0.25em;
+
+        &:hover {
+            background: lighten(#333, 3%);
+        }
+    }
+}
+
+button.img__gallery__close {
+    position: absolute;
+    box-sizing: border-box;
+    cursor: pointer;
+    top: 1em;
+    right: 1em;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333 !important;
+    border-radius: 0.25em;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    color: #efefef;
+    z-index: 1;
+
+    &:hover {
+        background: lighten(#333, 3%) !important;
+    }
+}
+
+section .img__gallery__image.active > .modal {
+    display: flex;
+}

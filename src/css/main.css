@@ -191,11 +191,12 @@ section.longform {
 }
 
 /* IMAGES */
-.img__macpack {
+.img__promo {
    width: 40vw;
    visibility: visible;
+   position: relative;
 
-   &.computer {
+   &.main {
       position: absolute;
       top: 0;
       left: 0;
@@ -209,11 +210,13 @@ section.longform {
       z-index: 2;
    }
 
-   &.desktop {
-      z-index: inherit;
+   &.alt {
+      position: relative;
+      top: 0;
+      z-index: 1;
    }
 
-   &.screensaver__hide {
+   &.hide {
       visibility: hidden;
    }
 }
@@ -288,9 +291,13 @@ section.longform {
       justify-content: center;
       padding-bottom: 0;
    }
-   section.left.no-scroll > img.macpack-img {
+   section.left.no-scroll > img.img__promo {
       margin: 0 auto;
-      width: 70vw;
+      height: 40vh;
+      width: auto;
+   }
+   img#macpack_promo_desktop {
+      left: -140px;
    }
  }
  @media screen and (min-width: 650px) and (max-width: 1000px) {
@@ -300,15 +307,19 @@ section.longform {
       gap: 20px;
       justify-content: center;
    }
-   section.left > img.macpack-img {
+   section.left > img.img__promo {
       margin: 0 auto;
-      width: 60vw;
+      height: 40vh;
+      width: auto;
+   }
+   img#macpack_promo_desktop {
+      left: -23vw;
    }
  }
 
  @media screen and (max-width: 1000px) {
    body.about,
-   body.macpack {
+   body.project {
       display: flex;
       flex-flow: column;
    }
