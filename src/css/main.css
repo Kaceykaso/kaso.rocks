@@ -291,13 +291,17 @@ section.longform {
       justify-content: center;
       padding-bottom: 0;
    }
+   section.left.no-scroll {
+      height: 50vh;
+   }
    section.left.no-scroll > img.img__promo {
       margin: 0 auto;
       height: 40vh;
       width: auto;
    }
    img#macpack_promo_desktop {
-      left: -140px;
+      position: absolute;
+      left: 0;
    }
  }
  @media screen and (min-width: 650px) and (max-width: 1000px) {
@@ -307,13 +311,17 @@ section.longform {
       gap: 20px;
       justify-content: center;
    }
+   section.left {
+      padding-top: 40vh;
+   }
    section.left > img.img__promo {
       margin: 0 auto;
       height: 40vh;
       width: auto;
    }
    img#macpack_promo_desktop {
-      left: -23vw;
+      position: absolute;
+      left: 0;
    }
  }
 
@@ -329,6 +337,7 @@ section.longform {
       width: 95%;
 
       &.no-scroll {
+         padding-top: 40vh;
          gap: 20px;
       }
    }
