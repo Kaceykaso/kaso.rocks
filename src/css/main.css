@@ -90,6 +90,18 @@ section {
    }
 }
 
+a.link-list {
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center; 
+   justify-content: start;
+   gap: 20px;
+}
+img.link-list__thumb {
+   border: 2px solid yellow;
+   height: 300px;
+}
+
 section.longform {
    /* Space 🪐 */
    margin: 0 4vw;
@@ -223,6 +235,11 @@ section.longform {
    &.retrokade {
       margin: 0 auto;
       width: 25vw;
+   }
+
+   &.traderkiki {
+      margin: 0 auto;
+      width: 30vw;
    }
 }
 
@@ -358,5 +375,14 @@ section.longform {
     .nes-btn {
         border-image-repeat: stretch;
     }
+ }
+
+ .accordion__title.img__gallery {
+   align-items: center;
+   flex-flow: row nowrap;
+
+   .img__thumb {
+      border-color: black;
+   }
  }
 
