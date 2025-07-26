@@ -42,6 +42,11 @@ p {
    text-decoration: underline;
 }
 
+a.reset {
+   color: inherit;
+   text-decoration: inherit;
+}
+
  /* CONTENT 📖 */
 .container {
    display: flex;
