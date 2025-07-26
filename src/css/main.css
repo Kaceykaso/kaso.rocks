@@ -43,7 +43,15 @@ p {
 }
 
  /* CONTENT 📖 */
+.container {
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
 
+   & section.left.no-scroll {
+      position: relative;
+   }
+}
 section.main {
    display: flex;
    /* Flexing 💪 */
@@ -314,7 +322,8 @@ section.longform {
       padding-bottom: 0;
    }
    section.left.no-scroll {
-      height: 50vh;
+      /*height: 50vh;*/
+      min-width: 350px;
    }
    section.left.no-scroll > img.img__promo {
       margin: 0 auto;
@@ -359,7 +368,7 @@ section.longform {
       width: 95%;
 
       &.no-scroll {
-         padding-top: 40vh;
+         /*padding-top: 40vh;*/
          gap: 20px;
       }
    }
