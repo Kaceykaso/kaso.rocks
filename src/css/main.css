@@ -327,7 +327,6 @@ section.longform {
       padding-bottom: 0;
    }
    section.left.no-scroll {
-      /*height: 50vh;*/
       min-width: 350px;
    }
    section.left.no-scroll > img.img__promo {
@@ -338,6 +337,9 @@ section.longform {
    img#macpack_promo_desktop {
       position: absolute;
       left: 0;
+   }
+   section.left.machack {
+      margin-bottom: 40vh;
    }
  }
  @media screen and (min-width: 650px) and (max-width: 1000px) {
@@ -359,6 +361,9 @@ section.longform {
       position: absolute;
       left: 0;
    }
+   section.left.machack {
+      margin-bottom: 40vh;
+   }
  }
 
  @media screen and (max-width: 1000px) {
@@ -367,15 +372,25 @@ section.longform {
       display: flex;
       flex-flow: column;
    }
+   .container {
+      flex-direction: column;
+      gap: 2em;
+   }
    section.left,
    section.right {
       position: relative;
       width: 95%;
 
       &.no-scroll {
-         /*padding-top: 40vh;*/
          gap: 20px;
       }
+   }
+ }
+
+ /* stupid ipad mini */
+ @media screen and (min-width: 760px) and (max-width: 1024px) {
+   section.left.machack {
+      margin-bottom: auto;
    }
  }
 
