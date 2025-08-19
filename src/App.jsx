@@ -1,12 +1,9 @@
-import { useState } from 'react'
-import { Hero } from './components/Hero'
-import { Gameboy } from './components/Gameboy'
-import { MessageList } from './components/MessageList'
-import { Footer } from './components/Footer'
-import './css/main.css'
+import { Hero } from './components/Hero';
+import { Gameboy } from './components/Gameboy';
+import { MessageList } from './components/MessageList';
+import { Footer } from './components/Footer';
 
-function App() {
-  //const [count, setCount] = useState(0)
+const App = () => {
 
   return (
     <>
@@ -18,7 +15,7 @@ function App() {
 
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
