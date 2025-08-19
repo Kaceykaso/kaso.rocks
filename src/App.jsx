@@ -2,6 +2,8 @@ import { Hero } from './components/Hero';
 import { Gameboy } from './components/Gameboy';
 import { MessageList } from './components/MessageList';
 import { Footer } from './components/Footer';
+import '/css/fonts.css';
+import '/css/main.css';
 
 const App = () => {
 
