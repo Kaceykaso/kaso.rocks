@@ -1,4 +1,7 @@
 import "/src/css/header.css"
+import dcg_831 from '/src/assets/dcg_831.png';
+import etsy_icon from '/src/assets/etsy_icon.png';
+import valheimians from '/src/assets/valheimians.png';
 
 
 export function Hero() {
@@ -14,12 +17,12 @@ export function Hero() {
             <ul className="hero">
                 <li>
                     <a href="https://dcgsantacruz.org/" title="Defcon Group Santa Cruz - DCG 831" target="_blank">
-                        <img src="/src/assets/dcg_831.png" height="46px" width="46px" />
+                        <img src={dcg_831} height="46px" width="46px" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.etsy.com/shop/TraderKiki" title="Trader Kiki shop on Etsy with 3D printed earrings" target="_blank">
-                        <img src="/src/assets/etsy_icon.png" height="46px" width="46px" />
+                        <img src={etsy_icon} height="46px" width="46px" />
                     </a>
                 </li>
                 <li>
@@ -39,7 +42,7 @@ export function Hero() {
                 </li>
                 <li>
                     <a href="https://www.valheimians.com/member/kasoline/" title="Kasoline on Valheimians" target="_blank">
-                        <img src="/src/assets/valheimians.png" alt="Valheimians profile page" height="46px" width="46px" />
+                        <img src={valheimians} alt="Valheimians profile page" height="46px" width="46px" />
                     </a>
                 </li>
             </ul>

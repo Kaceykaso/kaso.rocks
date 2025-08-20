@@ -1,4 +1,4 @@
-
+import mackpack_icon from '/src/assets/macpack_icon.png';
 
 export function MessageList() {
     return (
@@ -6,7 +6,7 @@ export function MessageList() {
             <div className="message-list">
                 <div className="message -left">
                     <div>
-                        <a href="projects.html" title="Link to project page"><img src="src/assets/macpack_icon.png" alt="pixelated icon of the MacPack" /></a>
+                        <a href="projects.html" title="Link to project page"><img src={mackpack_icon} alt="pixelated icon of the MacPack" /></a>
                     </div>
                     <div>
                         <div className="nes-balloon from-left macpack">
