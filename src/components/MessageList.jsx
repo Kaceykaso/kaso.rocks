@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import mackpack_icon from '/src/assets/macpack_icon.png';
 
 export function MessageList() {
@@ -6,14 +7,21 @@ export function MessageList() {
             <div className="message-list">
                 <div className="message -left">
                     <div>
-                        <a href="projects.html" title="Link to project page"><img src={mackpack_icon} alt="pixelated icon of the MacPack" /></a>
+                        <Link to="/projects" title="Link to project page">
+                            <img src={mackpack_icon} alt="pixelated icon of the MacPack" />
+                        </Link>
                     </div>
                     <div>
                         <div className="nes-balloon from-left macpack">
-                            <p>Check out my<br /> <a href="projects.html">fun projects!</a></p>
+                            <p>
+                                Check out my<br /> 
+                                <Link to="/projects">fun projects!</Link>
+                            </p>
                         </div>
                         <div className="nes-balloon from-left macpack">
-                            <p>Or my awesome<br /> <a href="traderkiki.html">earrings on Etsy!</a></p>
+                            <p>
+                                Or my awesome<br /> 
+                                <Link to="/traderkiki">earrings on Etsy!</Link></p>
                         </div>
                     </div>
                 </div>
@@ -28,7 +36,7 @@ export function MessageList() {
                 </div>
                  <div className="message -left">
                     <div>
-                        <a href="./about.html" className="nes-btn is-primary" title="About Kacey Lewis" target="_self">About</a>
+                        <Link to="/about" className="nes-btn is-primary" title="About Kacey Lewis">About</Link>
                     </div>
                     <div className="nes-balloon from-left">
                         <p>Read more about me!</p>
