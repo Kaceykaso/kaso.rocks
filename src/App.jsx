@@ -14,11 +14,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />}>
-          <Route path="traderkiki" element={<Traderkiki />} />
-          <Route path="macpack" element={<Macpack />} />
-          <Route path="retrokade" element={<Retrokade />} />
-        </Route>
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/traderkiki" element={<Traderkiki />} />
+        <Route path="/projects/macpack" element={<Macpack />} />
+        <Route path="/projects/retrokade" element={<Retrokade />} />
         <Route path="/uses" element={<Uses />} />
         <Route path="*" element={<h2>Opps! Not sure what you were looking for....</h2>} />
       </Routes>

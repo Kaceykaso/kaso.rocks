@@ -1,10 +1,422 @@
+import { useState } from "react";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import "../css/accordion.css";
+import "../css/image_viewer.css"
+import macpack_promo from "../assets/macpack_promo.png";
+import macpack_promo_screensaver from "../assets/macpack_promo_screensaver.gif";
+import macpack_promo_desktop from "../assets/macpack_promo_desktop.png";
+import apple_logo from "../assets/apple_logo.png";
+import retropie_logo from "../assets/retropie.png";
 
 
 export default function Macpack() {
+    const [modalImg, setModalImg] = useState(null);
+    
+    const handleImageClick = (imgSrc, imgAlt) => {
+        setModalImg({ src: imgSrc, alt: imgAlt });
+    };
+
+    const handleClose = () => setModalImg(null);
+
     return (
-        <div>
-            <h1>Macpack</h1>
-            <p>Check out my Macpack project!</p>
-        </div>
+        <>
+            <Header />
+            <section className="left no-scroll machack">
+                <img className="img__promo main" src={macpack_promo} alt="MacPack image, showing original Macintosh SE case painted light blue, yellow, pink, and purple; with backpack straps and an old clear telephone attached." />
+                <img id="macpack_promo_screensaver" className="img__promo hide" src={macpack_promo_screensaver} alt="Macpack screensaver image" />
+                <img id="macpack_promo_desktop" className="img__promo alt" src={macpack_promo_desktop} alt="Macpack desktop screen image"  />
+            </section>
+            
+            <section className="longform right scroll">
+                <div className="title__retro">
+                    <h2>The MacPack</h2>
+                    <p>
+                        <img className="img__icon" src={apple_logo} />
+                        Macintosh SE + RetroPie + Awesome
+                        <img className="img__icon" src={retropie_logo} />
+                    </p>
+                </div>
+                <div className="accordion">
+                    <div className="accordion__drawer">
+                        <input type="checkbox" name="accordion-1" id="cb1" />
+                        <label for="cb1" className="accordion__title">
+                            <h3>The Case</h3>
+                        </label>
+                        <div className="accordion__content">
+                            <div className="img__gallery">
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczOP3Z2o-9aCzScl-Basuc-YdCndMJT0bJrqc1KFOeIMJQFW075nL9ft2pG80AGUfG-NcIjHhWM3U43iuRwq6CWReIze7npAtPQgyK064e6J1nQQnDfJ=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczOoqKifhP70XvP5AE0YobwgWX-rmvUbvkIvjDQzk5c5LP3Hk-oECT5rZsTQYUPxTHWqWp-zhdQS5GeLb--6Wyv8-DVFOy9FFsekBK18izVIT8P7iood=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczP4YjTJreeazvteGC3JtoNdTnfeih6o9wdRYosXUuy0-Xqow3STR-Ds4KUVFG5rhHpThnl-S8GiKOf68-KuDj31FP5dxwuaQecWIHe_eBpjiC5w7F-l=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczN98GIWvfqyP2e3CaRno2x9mYoV2CkYJaY4bAlH4mtYQgsgZOXzyp075cRhO2uYYcisapl7616lgPOHU4lYBFuKO4VW7ITp_Jm-uAox7NiTqj0v_vaQ=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczNA6Z1li22nGS6sLa1tNkoN8xnSJzswZllKgwVuD6rQ0q4wVTVgqnb896CFxD3Gh6HkJIEXDpFDaZofQ7ulk4qWp6vpWrbxop5mM9vzIdvtbLcZk1gH=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczO4mLKpr-lwNE6xW1ikDHEAG7yDMICr1sRpHkpjWRLmnCqAChgjWdHVCiiRUIzvcpFMaFZ-qNr-mUAUiSsP7fIUGz0QNPedjdSoLtw3QzDDQOR_-Quy=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczOK6R6kx4Ql7K69fJQg078viGlmQofDEEywAP1hLfWfFJSUM2Gv_Wt8p_klxxhRiwnKR-Uwl85eGl4-OUcGowiNPCjMFsPPLpoxILa57IIH7jQbplCi=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczMffOweaCOOvDIZfmi9HDAj_KmmnU0miap4YWP1z3V9_Ar_jhX8rgMgxhXRSBfb1oHpl55nhxnbgD6chPk7e1Cj6XYHc0g103a7B1QibtDnitTghFqr=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczN_4Y69mnrkSmfLlfhyGkuuT4x0iH1ZuQejdr2AVps46PFh2QsFws_kRy-3lV6fRW07gZlmFQegHGrFEzVelrAXAxG5_4scqTViqj394WP8kw_LXkkb=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczMQE13cJjvOn8J9airBOjdZmhzhBaQbOqTuE_aw54Ngx-YIzol_JXGhMkCdKu1-ZpjKVtVcyulPf7zP8GW0GlkUstXz4lnF3vMg17LlYidKs2KSkb5H=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczPOZIgpm1_AN8HXu_8ZOh9qdDCrqCTS6HAZ733aM4dU5y6YV4xWmx1QUhCZN_82Bgmb_VCeZLdIzUxJhNOn7sIM1N5iRYzT2_gTLolwcpcw5ciLagq-=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                            </div>
+                            <p>
+                                <ul>
+                                    <li><b>Macintosh SE:</b> This started out as an original Macintosh SE case, shell only - no internals at all. I&apos;ve actually had this for years, with a 
+                                similar set of components inside, but if you don&apos;t - maybe try <a href="√https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1313&_nkw=macintosh+se&_sacat=0">eBay</a>?</li>
+                                    <li><b>LCD bracket:</b> There&apos;s a lot of <a href="https://www.printables.com/model/876743-macintosh-aio-9-inch-lcd-bracket-rev-4">STL files floating around</a> to print your own LCD bracket to replace the CRT in any Macintosh 128k/512k/Plus/Classic/SE, but at the time of building this, I didn&apos;t have
+                                a 3D printer, so I bought one already printed off <a href="https://www.etsy.com/listing/1377485134/macintosh-9-inch-crt-to-lcd-bracket">Etsy</a>. After fitting it into the case&apos;s faceplate, I used <a href="https://www.acehardware.com/departments/automotive-rv-and-marine/auto-tools-and-maintenance/auto-body-repair/89699">Bondo Spot Putty</a> to fill in the gaps before painting.</li>
+                                    <li><b>USB Ports:</b> I wanted to make use of all the holes in the back of the case, so I got some flush panel mount USB ports, that would be connected to the pi inside the case, and would allow me to optional plug in USB cables as needed from the outside of the case. 
+                                        I went with one <a href="https://www.amazon.com/dp/B09FL99YL6">2-port USB-A panel mount connector</a>, and two <a href="https://www.amazon.com/dp/B0BQHHJB4S">USB-C flush panel mount cables</a> which fit perfectly in the holes in the bottom of the case. Ok, I did had to Dremel the holes a tiny bit wider to fit. One is used as a dedicated power adapter.
+                                        <br />I also picked up some <a href="https://www.acehardware.com/departments/lighting-and-electrical/boxes-fittings-and-conduit/bushings/3471026">5/8&quot; bushings</a> to plug the other two holes and make that bottom back panel look nice and clean.
+                                    </li>
+                                    <li><b>Power Switch:</b> I wanted a big fat rocker switch on the back to turn the whole thing on and off, so I bought <a href="https://www.amazon.com/dp/B0C1N8Y86Z?th=1">one (or 5) off Amazon</a>. I think soldered some long wires to only 2 of the 4 pins on the rocker switch and connected them to the Pi&apos;s GPIO pins (pins 5 and 6 specifically), and used the script from 
+                                        <a href="https://howchoo.com/pi/how-to-add-a-power-button-to-your-raspberry-pi/?utm_source=youtube&utm_medium=referral&utm_campaign=power-button-video&utm_content=description">HowChoo&apos;s Raspberry Pi power button tutorial</a>.
+                                        Since the rocker switch was slightly too small to snuggly fit in the hole in th back of the case, I had to improvise with a piece of plastic. I cut a square plastic collar for the rocker switch, painted it to match the case, and gorilla glued it to the rocker switch.</li>
+                                    <li><b>Straps:</b> I just cut off the straps from a neon multicolor Jansport backpack, but any backpack straps will do here. I sewed the tops of both straps together in a "V", sewed those to an additional bit of strap, then poked the long M4 case screws through those to attach everything to 
+                                        the case under the top handle. The bottom of the straps I poked through the bottom vents on each side (I did have to Dremel out one slit on each side), and then sewed a button on each strap inside, to ensure the strap wouldn't come out.</li>
+                                    <li><b>Phone?!</b> Yes, though it's not connected to the computer....yet! I ran out of time before Def Con, but this is my next project - adapting the phone to be a mic and speaker that plugs into the computer via 3.5mm headphone jack. 
+                                        This was all inspired by the <a href="https://www.techeblog.com/intermatrix-macphone-1984-macintosh-computer/">Intermatrix MacPhone</a>, a real 3rd party Macintosh accessory from 1984, which I found out from <a href="https://www.youtube.com/watch?v=sCLvocTX2Ug">LGR&apos;s video</a> on it. 
+                                        I had to have it, but since there was <a href="https://www.ebay.com/itm/185984173346">only one on eBay for $300</a>, I quickly decided I did NOT need this phone, and would go with a different one. So I bought this clear phone off eBay for $20, which goes much better with the vaporwave aesethic I&apos;m going for.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="accordion__drawer">
+                        <input type="checkbox" name="accordion-2" id="cb2" />
+                        <label for="cb2" className="accordion__title">
+                            <h3>The Guts</h3>
+                        </label>
+                        <div className="accordion__content">
+                            <div className="img__gallery">
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczPAYjnLBQ9e9lDJ5YSPwBPiFNzeIv9cySU5qrILYc04_mNzMSDLHKYwOHca1AauacxMpwje6WnYY1Di4lQp5gLGVg37Iu-4R2lWDSxWiqbsXPt08Xlb=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczNx79bV58wQTTla_IRx5tz7SIiAoNen0zipNQkq0y9-k_SdIrNvzxui23PQlaXSidaPYPCeEkuld-xBlLKfUsC3RPMSzyVdTGugyhLssEB-HbK3oyZ6=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczO4sII_btxGTAA6S_JXrUkNDluDRk4GvT1CkaFp_XvMFgdAO0FL8UU2n83hsNBOsUbQmnLqHWcf11tHM4zelEW1LFhc0SQwoHjnq_KqQOt0HkeCm1fE=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczO08h-PDBNaYCMjFAsO1VpVi-WpEB1zpMl4c7Sb02PyaNa5uYrGhWBOFC5twB-1JzZJP3TNikBRZjP9x3OhmZzzg0VuB5G1KWbLJg6NFfXKIHvdzy4a=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczMHHWDP2fOeO-bZ94vclgKzaJ9AgbSdoSON2iVdEvNWbeVr1hmcryBLEfMNY5EMlUUDxtAem9-R3Uk19aQyq0TMrLpKxXVaWchOvIO6nGsoTV7PGKCV=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczPlJLhtVWnWaNP29Z_k9-M2K-kT-cDBX1b89cvuHoxDu0wBfC6WEa0me6TNTcX8HnkFtVRp1PJD9s69rPj01f6usTn2bPFNX8HYeMfczXOu4-KFk0jq=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczM6bGQs5BFEfuJZJ_qmhsgNmNK3YsR_o_cakyC2TAYKf09Bwb-Hd3NRiXaahLGY3ltblWQt65Q-KF_mbYKaiQEW5Gp5oYHKkScxM94NpDaJLlj8_51G=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczOTvtRPUY9qIhWKzjUi-WC7RiStv5rIeEqAtiDgXxiznJ76w-QwbONW_MLxoJpthRiOTgr5lMQ3fkhWLcRjNRk7YIPu1_OBh1aVtRWl7LWTeZbeUdkb=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczNML8ziTAp0utk1i-sSB0ZQZ6nX6lNkBkb3WNjS3mUCIHapAnLNSgidhxI8GrnC0byq01mO8YGo3V-yELxXESwv_WmBgZZfqSVPiDcm81Xt-mZbITAJ=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczOupmewVw-fhiAcV4cXiqlbVLOzEBt86itNDvhoBWINpBnjBqr-KY2mM3ykwLX_hRs9mwbTPLGNvhKlm_El3EISMsxxkiMO8IxSJXgNU7g90BACx9bR=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                            </div>
+                            <p>
+                                <ul>
+                                    <li><b>Computer:</b> <a href="https://www.centralcomputer.com/raspberry-pi-4-model-b-8gb-ram-board.html">Raspberry Pi 4, 8GB ram</a>. Obviously its running on a Pi. I started out with a Pi 5 (latest at the time), but there still isn&apos;t a lot of 3rd party support for the 5;
+                                        I ran into issues with USB drives not mounting, audio not playing, screensaver not working - all of which just worked on the Pi 4 without issue.<br />
+                                        I also got a <a href="https://www.amazon.com/dp/B07VD568FB">Geekworm Armor Case</a> for the pi, which acts as a giant heat sink, instead of a fan.
+                                    </li>
+                                    <li><b>LCD Monitor:</b> I used a <a href="https://www.adafruit.com/product/1287?gad_source=1&gclid=CjwKCAjw74e1BhBnEiwAbqOAjN6eeZg2bmpPsiOtPJELilZ6QdNnkxeFC703h2TPuDGR1BuAFTyaXRoChREQAvD_BwE">10inch LCD from Adafruit</a>, and replaced the default AC power adapter with a <a href="https://www.amazon.com/dp/B074R7FDCR">USB-to-barrel converter</a> so that it could be run off the battery.</li>
+                                    <li><b>Battery:</b> The battery I chose was the <a href="https://www.amazon.com/dp/B0BYP2F3SG">Anker Power Bank</a> - arguably overpowered for this, but I wanted a battery with <strong>pass-through charging</strong> - so that I would only have 1 USB-C cable coming out the 
+                                        back. This could run all the components off power AND charge the battery at the same time when plugged in. This power bank also has a handy app, that connects over bluetooth, so I can see exactly what the battery is doing, its temperature, and power draw without having to open the case and pull it out.</li>
+                                    <li><b>Speakers:</b> I already had a cheap pair of desktop USB speakers off Amazon (no longer available, but <a href="https://www.amazon.com/MANHATTAN-2600-Speaker-System-161435/dp/B005LW42MY/ref=sr_1_7_sspa">something like these</a>), that used USB for power and headphone jack for audio, with a volume dial. I tore off the plastic housing for the 
+                                        speakers, screwed them to a plexiglass plate that I screwed to the inside of the Mac&apos;s faceplate, and positioned the volume dial where the Mac&apos;s original screen brightness dial used to be.</li>
+                                    <li><b>Case Fan:</b> After testing and seeing how hot the battery got, I decided to get a <a href="https://www.amazon.com/dp/B00G059G86?ref=ppx_yo2ov_dt_b_fed_asin_title">fan for inside the case</a>, which also runs off USB. This helped bring the battery temp down to around 80˚F (as opposed to 95˚F).</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="accordion__drawer">
+                        <input type="checkbox" name="accordion-3" id="cb3" />
+                        <label for="cb3" className="accordion__title">
+                            <h3>The Software</h3>
+                        </label>
+                        <div className="accordion__content">
+                            <div className="img__gallery">
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczMhnypC5DqaR6fVFk7UkL464lMbm-b_JqtF5hKuL9uz9HLEKAJyICcFw50RrPjWJZvLw6iEdH-P8LEmmKXSGL8HBS70Vu7kO2OB7bFWX7ylR5Kcng03=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczPGBF8ojoYuNv6Wpf0wGGKbKeBcCsAgebISja-T0WrOf2nTxF5ndmjtvwwHy-9cv06SnW43Ncw-5zGJBl7MtnW4cKO4erBldNvxia4q4cZxiiRu0OK0=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczMgYZ2JhLJqo84sc0w8uFTUTWIVrqcq3u1L1qYET6EMp6xlk1BaAtmkSGsrG2jdvasXCZak-KdYElHwQUyheg381UiV_I4z6nPW1ORi0Y2pRGUuP-ty=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczPACe55hc40NurDX6VseLPmenrKLzuYC0DDyGYUe5EB4Vx6MczHAcdtPCbFN8q2p8Kp28cRycraMm11DXimLMIxUCLgp4KGs9V6mLYCAhzpNqFMDJ2C=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczP1Tgy2YaSkbvZ8jiF3SrD2Hu5iX2LhOuLJRsR4OXCegDpaM7bpQ3FOuhrPoCJ90h8BE5QfwfmYKo21Ytq2edMsgqOvTitDUwXUFR6e-9SElOJ5yWMx=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczM0ia8cDZNI63IE5zFK-SM8DODDEM_TS8bqTLlRPc8JRB0UtNa_WQ7lFiBul8JoDpqhMxzjyLqo9hEw0ZGwo0KhqjveR2OAQogNefkIILzAPuNafp5s=w600-h315-p-k-no" />
+                                    </button>
+                                </div>
+
+                            </div>
+                            <p>
+                                <ul>
+                                    <li><b>SD Card Imaging:</b> Raspberry Pi has their own <a href="https://www.raspberrypi.com/software/">imager software</a> that makes putting any OS image on an SD card a breeze, and includes 3rd party OS&apos;s - like RetroPie!!</li>
+                                    <li><b>Operating System:</b> This baby is running <a href="https://retropie.org.uk/docs/">RetroPie</a>, an OS for RPI&apos;s that is made for retro gaming, with tons of emulators out of the box!</li>
+                                    <li><b>Theme:</b> I designed a custom Emulationstation theme myself for this, to look like System 6, then I made ANOTHER theme to make it more vaporwave - <a href="https://github.com/Kaceykaso/es-theme-macbench-vaporwave">download the theme here</a>! 
+                                        Making my own Emulationstation theme was fairly easy, thanks to their <a href="https://retropie.org.uk/docs/Creating-Your-Own-EmulationStation-Theme/">great documentation</a>, and the <a href="https://retropie.org.uk/forum/topic/5552/release-amiga-workbench-emulationstation-theme">Amiga Workbench theme</a> 
+                                        for the inspiration (hence where then name &apos;macbench&apos; comes from).</li>
+                                    <li><b>Screensaver:</b> I wanted to implement an After Dark screensaver for the whole system (emulationstation specifically allows for <a href="https://retropie.org.uk/forum/topic/12733/animated-screensavers/2">image, slideshow, or video screensavers</a>), and 
+                                        stumbled across a Flying Toasters MP4 file that was perfect! <a href="src/assets/flying_toasters.mp4.zip" title="Flying toasters MP4 file">Download it here</a>!</li>
+                                    <li><b>Honorable Mention - Macintosh emulator:</b> Despite RetroPie doing a lot of the work for you, some emulators take some configuring. I used the <a href="https://www.gryphel.com/c/minivmac/">Mini vMac</a> emulator (<a href="https://retropie.org.uk/docs/Macintosh/">as opposed to Basiliskll</a>),
+                                        but needed to recompile it for my specific screen size and needs (arm build did not immediately work). I also wanted 2 different versions: default Mini vMac Macintosh Plus (black & white), along with a Macintosh Classic II (color) side by side.
+                                        Learning how to <a href="https://www.gryphel.com/c/minivmac/build.html">compile</a> the Mini vMac (on the RPI no less) was it&apos;s own adventure and side-quest, but I tackled that mini boss and chugged on.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="accordion__drawer">
+                        <input type="checkbox" name="accordion-4" id="cb4" />
+                        <label for="cb4" className="accordion__title">
+                            <h3>The Paint</h3>
+                        </label>
+                        <div className="accordion__content">
+                            <div className="img__gallery">
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczMgWfKCCcu51qHc08-yg7kvWc_-ztYbTL9_UMFFzntKOtxWe5tv-x4RpvS9tGuoyuEX4lo8QHzv0PjGJQ26uTJHrnXM_gmB8yonYuxb5Z8Tgh8T8Jkc=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczPmMKwnDTSrdJOY74TfAj52X2rg9_H2LLY6uG252EngFaJ_RhRhf2LQ9xHAxRVxp2wDl41bkWskdKgrRTrJKLT3QwocL8ZuSFe2ZytZaE_YftEFLnCk=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczOLXbAbkVmlm-Jz_khqLSdJ_xuiLnp8vN39pBc5rQ5QvcgBouzj6GIiL0GLZOxHG3E7qHbXPExMxxQiLuH419HOCMaLWq6RFrZzOD5mR171fUZn-iRG=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczOKF1dy5A9K87ObfSZGtw7KayLA2AZdrhnlRu1TGdQhtb6z8Tl_1hYdvoByd1kn27aspSx49N6kwsZkEBiAQFgOxNDGCLXTQaw-GI48j4f2El4qDEmr=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczMQE13cJjvOn8J9airBOjdZmhzhBaQbOqTuE_aw54Ngx-YIzol_JXGhMkCdKu1-ZpjKVtVcyulPf7zP8GW0GlkUstXz4lnF3vMg17LlYidKs2KSkb5H=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" src="https://lh3.googleusercontent.com/pw/AP1GczPS2MwsTTKpmClV-y1ivWRA2-mxMUlDd9fURum-XtzFrr9yyuRMFpJ8YLPCdB3y5IKHBI56_fwrINXUaLHV9I7lJBfEkqmU-smgpV0zuCb0q9PZzd3N=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                            </div>
+                            <p>
+                                <ul>
+                                    <li><b>Prep:</b> Scuff up the entire piece with a <a href="https://www.acehardware.com/departments/home-and-decor/cleaning-and-disinfectants/scouring-pads-and-sponges/17443">Scotch Brite Scour Pad</a> (not sandpaper), just enough to take the shine off. 
+                                        Then wipe down with a wet paper towel, because there will be green dust all over it, and let dry.</li>
+                                    <li><b>Adhesion Promoter:</b> This is critical for spray painting plastic. I used <a href="https://www.oreillyauto.com/detail/c/dupli-color/dupli-color-11-ounce-adhesion-promoter/dpl0/cp199?q=adhesion+promoter&pos=0">Dupli-Color Adhesion Promoter Spray</a> (Amazon or any auto parts store) and followed the instructions on the 
+                                        can for times between coats and primer.</li>
+                                    <li><b>Primer:</b> I used <a href="https://www.acehardware.com/departments/paint-and-supplies/spray-paint/general-purpose/1395524">Rustoleum White Primer</a>, and again followed the instructions on the can for coat reapplication and dry times. Since I used Krylon for color, I&apos;ve been told you want stay within the same brand for everything, 
+                                        and I should have used a Krylon primer. My local store didn&apos;t have this, so I went with Rustoleum; but after seeing how easily it&apos;s gotten 
+                                        nics and chipped, I&apos;m inclined to believe this and the finishing enamel might have been the issue.<br />
+                                        I choose white primer specifically since I was using a light yellow color, and wanted to ensure it would be as bright as possible.</li>
+                                    <li><b>Color:</b> I used Krylon for all my spray paint colors, as I&apos;ve heard its the best for bright colors; and I certainly can&apos;t argue with the results. Specifically for this project, I used:<br />
+                                        <a href="https://www.acehardware.com/departments/paint-and-supplies/spray-paint/general-purpose/1915214">Hot Pink</a>, 
+                                        <a href="https://www.amazon.com/gp/product/B07NNSTSQV/ref=ppx_yo_dt_b_search_asin_title">Lagoon Blue</a>, 
+                                        <a href="https://www.amazon.com/Krylon-K05505007-COLORmaxx-Spray-Aerosol/dp/B07LFWTW62/ref=sr_1_2?crid=2M5NCXF7W1PHC&dib=eyJ2IjoiMSJ9.scGwXHj1r7BVt_oBKM2lKmx-G6FuKlN7k_LkmAJsYON82SSQR3tu1Ef3xznbTkrtb80X8vsr0wyRe816J7YhbxnABjPgfjKWgXaTzRknwNUaxqOa-5xcg_wI_p3tecxAoQZABiQUXhktutPv1SQIJ0nnzt7OgDc9eXFk2IA0McvC8h--MXbOEJ0hucbgNgXafg2fF1bVqLf20zXPkpL_GPAOQJ2i8030BVdSrXeRlCV2VyvxoMjJApR-svUilqphuKQVtUkiGfFD6Vz1D1b_l5oCOfHF3dEjWnolZ9MHxqQ.R_drOETeQRypac_YCgLwCJv4G5paOodXCc8X_gqMggI&dib_tag=se&keywords=Krylon%C2%AE%2BCOLORmaxx%E2%84%A2%2BPaint%2BPrimer&qid=1721944504&refinements=p_89%3AKrylon&rnid=2528832011&s=hi&sprefix=krylon%2B%2Bcolormaxx%2B%2Bpaint%2Bprimer%2Ctools%2C206&sr=1-2&th=1">Sun Yellow</a>, and 
+                                        <a href="https://www.amazon.com/gp/product/B07LFYB18Z/ref=ppx_yo_dt_b_search_asin_title">Rich Plum</a>.</li>
+                                    <li><b>Finish:</b> I used two finishing sprays: first, <a href="https://www.acehardware.com/departments/paint-and-supplies/spray-paint/general-purpose/1010875">Krylon Matte Finish</a>, then <a href="https://www.acehardware.com/departments/paint-and-supplies/spray-paint/hobby-spray-paint/1566736?store=00634&gad_source=1&gclid=CjwKCAjw1920BhA3EiwAJT3lSarPdrCcJ26OL7Hz2ogdx8T1uI0b9A-CEavTAqnaErHdof5wq1B5LxoCKeIQAvD_BwE&gclsrc=aw.ds">Rustoleum Matte Clear Enamel</a>. 
+                                        The paint left the project shiner than I liked, and the Krylon matte spray really made it look like a real, retro product! I had <a href="https://youtu.be/g-lkORBKk2o?si=3_rI69_qkaQJqXVW">watched reviews of a few different matte sprays</a>, and Krylon&apos;s was far and away the best looking.
+                                        Since I knew this would get knocked around being worn as a backpack, I also wanted to do a more protective layer on top after everything was done. 
+                                        As I mentioned above though, I think using Rustoleum and not Krylon here might have been 
+                                        a mistake, since it still got chipped pretty easily being worn at Def Con. Krylon does not make a clear enamel, but I might experiment with some other clear finishing sprays.
+                                        Again, follow the instructions on each can for specific application and dry times - each layer is different.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="accordion__drawer">
+                        <input type="checkbox" name="accordion-5" id="cb5" />
+                        <label for="cb5" className="accordion__title">
+                            <h3>Parts List</h3>
+                        </label>
+                        <div className="accordion__content">
+                            <p>
+                                <ul>
+                                    <li>Full parts list, including spray paint and screws used, with links can be <a target="_blank" title="Parts list with links for Mac Pack" href="https://docs.google.com/document/d/e/2PACX-1vQbmOzJhV906nrSaERAWhIEy09pEcMpq-PQ0Or_NYkA5cDnOtbsBQMzjltWutoAk257NVx9ulgP62kz/pub">found here</a>.</li>
+                                    <li>Oh and that clear phone on the side? I have no idea what make or model it is, as I found it on eBay. If you have more info on it, let me know!</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="accordion__drawer">
+                        <input type="checkbox" name="accordion-6" id="cb6" />
+                        <label for="cb6" className="accordion__title">
+                            <h3>MacPack Adventures</h3>
+                        </label>
+                        <div className="accordion__content">
+                            <div className="img__gallery">
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczMc9eWAxz7mm1066P56LzovmwbcdTMbKxTSBfWxyGh5UKQPwxzGpyLGhyDbNkv7t_fxw7aLZv_ny7tagcKTCr93WawyRomcPkx7DM_t33d2yYnAaqgc=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczMr0Aq5Xz0Wvx31QNoPfJ3GAMI_9-OmvwoZRXZgIdVZM_cwqqD2cStYf9NGF8jzDgW90FeEyXeoDe6Cn7PYMBjVGJgOIDRPLbKqs-n-I0Pdzi_y5QMb=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczP9WMUOpAbctUcuN8GrUeeU1ApOfNjwdNkHz2_Hrez9SCdK2A4UX9fCzHBRVyE4Z4oJcFTNOBd2oU4fAgq_NKXgfPgphG2BcLKROx8BmYqqdb4M1Bfh=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczNFVSorlNQZfAMwCad3o5WBQ8rRPLn1TJ5l_cKEFsCe4TWhFBC3mM9LV1TUUjFELEJYUFctMUOoP1iTjD5cVckGRMXsf-unFP6hP2QJnkIGk28BSh01=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczP7KOzqKUm2WGjACH2cPU9O51nKyIzyK9vVmlLB7yUsS9c3h6qCFlDA8hFxGAzB2A4jSPtje36mZJRdNJCVpAukSxY4ynMtDxNHfBhhKy1g4X6zw7tM=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczNYSfvZgHzJGFgqsisZLTzT3WZU5rNodUAX2GXpinwoB7nTxLb8nLX6T-38vd2UobsqXe6pq-DdtFiLOIqm2yMWdID_Jgi5D9u6kHupYsL6wV0dsoiN=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczMdtdOIyq2MZGrTPfztFtpLDASFrTqtJa8z4MJO1wmyc_Gd-x0e2pEyiR9707MeQVSrNGuylM1A6EAdQ_LuEoKzbMkw3qLIAykob9GzDXaLk7jUI3PU=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczPqPHVXwATO7JTJo-a4FKPfeq1pFTscoDg4gtIkkco_zYYf8JDKE7dkODmtVtGjHEXarBl6ZScLOurBoLMPDzyhY8BLxNkMMNrE1kwixgtmHgkXFcps=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczP_I0rR-GDoxhrS0GpOMxxoUrUi9Cm3Nu89MNrxikF3TMetuxGQPcomgVcHmDHsgmCw27w8vp3W26cAUBHaE-Fx0Wg5QpdqxUipnTw3JlnBUWO2cy7A=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczNnoo-n0-lBAxaZ7YOkWJavXklNZYspbCC6lCUD_26Sc1XiolZXWmAsEk5ARUFTZ-Mio8sdLRg5OBFMvai_nYg7o7DcYmMLV874yiLfSiYAa-_o4Mst=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button className="img__gallery__thumb">
+                                        <img className="img__thumb" alt="Image thumbnail" src="https://lh3.googleusercontent.com/pw/AP1GczMRnKuKfICk_DeG_mJwVKsypN9cwL0uqreXRUfPHe83NHMAwNR9P6so4TTvo0w0LaBA0sckCDCJKKDfAzcmLtA9czncFRlhi7ctXkvFpSAo-PzwKMY7=w600-h315-p-k" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Modal for image viewing */}
+            {modalImg && (
+                <div className="img-modal" onClick={handleClose} style={{
+                    position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 1000
+                }}>
+                    <img
+                        src={modalImg.src}
+                        alt={modalImg.alt}
+                        style={{ maxWidth: '80vw', maxHeight: '80vh' }}
+                    />
+                    <button 
+                        className="img__gallery__close"
+                        onClick={handleClose}
+                        style={{ position: 'absolute', top: '20px', right: '20px', fontSize: '2rem' }}
+                    >x</button>
+                </div>
+            )}
+            <Footer />
+        </>
     )
 }

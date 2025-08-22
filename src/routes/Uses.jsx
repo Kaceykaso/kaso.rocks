@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom"
+import { Header } from "../components/Header"
 import { Gameboy } from "../components/Gameboy"
 import { Footer } from "../components/Footer"
 
 export default function Uses() {
     return (
         <>
-            <header class="topbar">
-                <Link to="home" title="Want to see that amazing home screen again? Sure!"><h1 class="title">kaso.rocks</h1></Link>
-                <ul class="topbar">
-                    <li><Link to="about" title="About Kacey Lewis" target="_self">about</Link></li>
-                    <li><Link to="" title="What Kacey uses, what this website uses - you are already here!" target="_self">uses</Link></li>
-                    <li><Link to="projects" title="What Kacey is working on at the moment" target="_self">projects</Link></li>
-                </ul>
-            </header>
+            <Header />
             <div class="container">
                 <section class="left no-scroll">
                     <Gameboy />

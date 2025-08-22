@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Header } from "../components/Header";
 import { Gameboy } from "../components/Gameboy";
 import { Footer } from "../components/Footer";
 
@@ -6,14 +7,7 @@ import { Footer } from "../components/Footer";
 export default function About() {
     return (
         <>
-            <header class="topbar">
-                <Link to="home" title="Want to see that amazing home screen again? Sure!"><h1 class="title">kaso.rocks</h1></Link>
-                <ul class="topbar">
-                    <li><Link to="" title="About Kacey Lewis - you are already here!" target="_self">about</Link></li>
-                    <li><Link to="uses" title="What Kacey uses, what this website uses" target="_self">uses</Link></li>
-                    <li><Link to="projects" title="What Kacey is working on at the moment" target="_self">projects</Link></li>
-                </ul>
-            </header>
+            <Header />
             <div class="container">
                 <section class="left no-scroll">
                     <Gameboy />
@@ -99,7 +93,7 @@ export default function About() {
                         </p>
                         <h3>What Am I Using?</h3>
                         <p>
-                            If you are curious what this website, or myself, is using - <a href="uses.html" title="What is Kacey using?">check it out</a>!
+                            If you are curious what this website, or myself, is using - <Link to="/uses" title="What is Kacey using?">check it out</Link>!
                         </p>
                     </div>
                 </section>
