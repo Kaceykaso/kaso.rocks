@@ -8,55 +8,56 @@ import macpack_promo_screensaver from "../assets/macpack_promo_screensaver.gif";
 import macpack_promo_desktop from "../assets/macpack_promo_desktop.png";
 import apple_logo from "../assets/apple_logo.png";
 import retropie_logo from "../assets/retropie.png";
-import macpack1_thumb from "../assets/macpack/macpack1_thumb.jpg";
-import macpack2_thumb from "../assets/macpack/macpack2_thumb.jpg";
-import macpack3_thumb from "../assets/macpack/macpack3_thumb.jpg";
-import macpack4_thumb from "../assets/macpack/macpack4_thumb.jpg";
-import macpack5_thumb from "../assets/macpack/macpack5_thumb.jpg";
-import macpack51_thumb from "../assets/macpack/macpack5-1_thumb.jpg";
-import macpack6_thumb from "../assets/macpack/macpack6_thumb.jpg";
-import macpack7_thumb from "../assets/macpack/macpack7_thumb.jpg";
-import macpack8_thumb from "../assets/macpack/macpack8_thumb.jpg";
-import macpack9_thumb from "../assets/macpack/macpack9_thumb.jpg";
-import macpack10_thumb from "../assets/macpack/macpack10_thumb.jpg";
-import macpack11_thumb from "../assets/macpack/macpack11_thumb.jpg";
-import macpack12_thumb from "../assets/macpack/macpack12_thumb.jpg";
-import macpack13_thumb from "../assets/macpack/macpack13_thumb.jpg";
-import macpack14_thumb from "../assets/macpack/macpack14_thumb.jpg";
-import macpack15_thumb from "../assets/macpack/macpack15_thumb.jpg";
-import macpack16_thumb from "../assets/macpack/macpack16_thumb.jpg";
-import macpack17_thumb from "../assets/macpack/macpack17_thumb.jpg";
-import macpack18_thumb from "../assets/macpack/macpack18_thumb.jpg";
-import macpack19_thumb from "../assets/macpack/macpack19_thumb.jpg";
-import macpack20_thumb from "../assets/macpack/macpack20_thumb.jpg";
-import macpack21_thumb from "../assets/macpack/macpack21_thumb.jpg";
-import macpack22_thumb from "../assets/macpack/macpack22_thumb.jpg";
-import macpack23_thumb from "../assets/macpack/macpack23_thumb.jpg";
-import macpack24_thumb from "../assets/macpack/macpack24_thumb.jpg";
-import macpack25_thumb from "../assets/macpack/macpack25_thumb.jpg";
-import macpack26_thumb from "../assets/macpack/macpack26_thumb.jpg";
-import macpack261_thumb from "../assets/macpack/macpack26-1_thumb.jpg";
-import macpack27_thumb from "../assets/macpack/macpack27_thumb.jpg";
-import macpack28_thumb from "../assets/macpack/macpack28_thumb.jpg";
-import macpack29_thumb from "../assets/macpack/macpack29_thumb.jpg";
-import macpack30_thumb from "../assets/macpack/macpack30_thumb.jpg";
-import macpack301_thumb from "../assets/macpack/macpack30-1_thumb.jpg";
-import macpack302_thumb from "../assets/macpack/macpack30-2_thumb.jpg";
-import macpack303_thumb from "../assets/macpack/macpack30-3_thumb.jpg";
-import macpack31_thumb from "../assets/macpack/macpack31_thumb.jpg";
-import macpack32_thumb from "../assets/macpack/macpack32_thumb.jpg";
-import macpack33_thumb from "../assets/macpack/macpack33_thumb.jpg";
-import macpack34_thumb from "../assets/macpack/macpack34_thumb.jpg";
-import macpack35_thumb from "../assets/macpack/macpack35_thumb.jpg";
-import macpack36_thumb from "../assets/macpack/macpack36_thumb.jpg";
-import macpack37_thumb from "../assets/macpack/macpack37_thumb.jpg";
-import macpack38_thumb from "../assets/macpack/macpack38_thumb.jpg";
-import macpack39_thumb from "../assets/macpack/macpack39_thumb.jpg";
-import macpack40_thumb from "../assets/macpack/macpack40_thumb.jpg";
-import macpack41_thumb from "../assets/macpack/macpack41_thumb.jpg";
-import macpack42_thumb from "../assets/macpack/macpack42_thumb.jpg";
-import macpack43_thumb from "../assets/macpack/macpack43_thumb.jpg";
-import macpack44_thumb from "../assets/macpack/macpack44_thumb.jpg";
+import macpack_thumb1 from "../assets/macpack/macpack_thumb1.jpg";
+import macpack_thumb2 from "../assets/macpack/macpack_thumb2.jpg";
+import macpack_thumb3 from "../assets/macpack/macpack_thumb3.jpg";
+import macpack_thumb4 from "../assets/macpack/macpack_thumb4.jpg";
+import macpack_thumb5 from "../assets/macpack/macpack_thumb5.jpg";
+import macpack_thumb51 from "../assets/macpack/macpack_thumb5-1.jpg";
+import macpack_thumb6 from "../assets/macpack/macpack_thumb6.jpg";
+import macpack_thumb7 from "../assets/macpack/macpack_thumb7.jpg";
+import macpack_thumb8 from "../assets/macpack/macpack_thumb8.jpg";
+import macpack_thumb9 from "../assets/macpack/macpack_thumb9.jpg";
+import macpack_thumb10 from "../assets/macpack/macpack_thumb10.jpg";
+import macpack_thumb11 from "../assets/macpack/macpack_thumb11.jpg";
+import macpack_thumb12 from "../assets/macpack/macpack_thumb12.jpg";
+import macpack_thumb13 from "../assets/macpack/macpack_thumb13.jpg";
+import macpack_thumb14 from "../assets/macpack/macpack_thumb14.jpg";
+import macpack_thumb15 from "../assets/macpack/macpack_thumb15.jpg";
+import macpack_thumb16 from "../assets/macpack/macpack_thumb16.jpg";
+import macpack_thumb17 from "../assets/macpack/macpack_thumb17.jpg";
+import macpack_thumb18 from "../assets/macpack/macpack_thumb18.jpg";
+import macpack_thumb19 from "../assets/macpack/macpack_thumb19.jpg";
+import macpack_thumb20 from "../assets/macpack/macpack_thumb20.jpg";
+import macpack_thumb21 from "../assets/macpack/macpack_thumb21.jpg";
+import macpack_thumb22 from "../assets/macpack/macpack_thumb22.jpg";
+import macpack_thumb23 from "../assets/macpack/macpack_thumb23.jpg";
+import macpack_thumb24 from "../assets/macpack/macpack_thumb24.jpg";
+import macpack_thumb25 from "../assets/macpack/macpack_thumb25.jpg";
+import macpack_thumb26 from "../assets/macpack/macpack_thumb26.jpg";
+import macpack_thumb261 from "../assets/macpack/macpack_thumb26-1.jpg";
+import macpack_thumb27 from "../assets/macpack/macpack_thumb27.jpg";
+import macpack_thumb28 from "../assets/macpack/macpack_thumb28.jpg";
+import macpack_thumb29 from "../assets/macpack/macpack_thumb29.jpg";
+import macpack_thumb291 from "../assets/macpack/macpack_thumb29-1.jpg";
+import macpack_thumb30 from "../assets/macpack/macpack_thumb30.jpg";
+import macpack_thumb301 from "../assets/macpack/macpack_thumb30-1.jpg";
+import macpack_thumb302 from "../assets/macpack/macpack_thumb30-2.jpg";
+import macpack_thumb303 from "../assets/macpack/macpack_thumb30-3.jpg";
+import macpack_thumb31 from "../assets/macpack/macpack_thumb31.jpg";
+import macpack_thumb32 from "../assets/macpack/macpack_thumb32.jpg";
+import macpack_thumb33 from "../assets/macpack/macpack_thumb33.jpg";
+import macpack_thumb34 from "../assets/macpack/macpack_thumb34.jpg";
+import macpack_thumb35 from "../assets/macpack/macpack_thumb35.jpg";
+import macpack_thumb36 from "../assets/macpack/macpack_thumb36.jpg";
+import macpack_thumb37 from "../assets/macpack/macpack_thumb37.jpg";
+import macpack_thumb38 from "../assets/macpack/macpack_thumb38.jpg";
+import macpack_thumb39 from "../assets/macpack/macpack_thumb39.jpg";
+import macpack_thumb40 from "../assets/macpack/macpack_thumb40.jpg";
+import macpack_thumb41 from "../assets/macpack/macpack_thumb41.jpg";
+import macpack_thumb42 from "../assets/macpack/macpack_thumb42.jpg";
+import macpack_thumb43 from "../assets/macpack/macpack_thumb43.jpg";
+import macpack_thumb44 from "../assets/macpack/macpack_thumb44.jpg";
 import macpack1 from "../assets/macpack/macpack1.jpg";
 import macpack2 from "../assets/macpack/macpack2.jpg";
 import macpack3 from "../assets/macpack/macpack3.jpg";
@@ -85,9 +86,10 @@ import macpack24 from "../assets/macpack/macpack24.jpg";
 import macpack25 from "../assets/macpack/macpack25.jpg";
 import macpack26 from "../assets/macpack/macpack26.jpg";
 import macpack261 from "../assets/macpack/macpack26-1.jpg";
-import macpack27 from "../assets/macpack/macpack27.jpg";
+import macpack27 from "../assets/macpack/macpack27.mp4";
 import macpack28 from "../assets/macpack/macpack28.jpg";
 import macpack29 from "../assets/macpack/macpack29.jpg";
+import macpack291 from "../assets/macpack/macpack29-1.jpg";
 import macpack30 from "../assets/macpack/macpack30.jpg";
 import macpack301 from "../assets/macpack/macpack30-1.jpg";
 import macpack302 from "../assets/macpack/macpack30-2.jpg";
@@ -111,7 +113,8 @@ export default function Macpack() {
     const [modalImg, setModalImg] = useState(null);
     
     const handleImageClick = (imgSrc, imgAlt) => {
-        setModalImg({ src: imgSrc, alt: imgAlt });
+        const isVideo = imgSrc.includes('.mp4') || imgSrc.includes('.webm') || imgSrc.includes('.mov');
+        setModalImg({ src: imgSrc, alt: imgAlt, isVideo });
     };
 
     const handleClose = () => setModalImg(null);
@@ -144,63 +147,110 @@ export default function Macpack() {
                             <div className="img__gallery">
                                 <div className="img__gallery__image">
                                     <button 
-                                    className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack1_thumb} />
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack1, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb1} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack2_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack2, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb2} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack3_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack3, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb3} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack4_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack4, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb4} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack5_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack5, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb5} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack51_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack51, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb51} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack6_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack6, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb6} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack7_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack7, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb7} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack8_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack8, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb8} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack9_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack9, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb9} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack10_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack10, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb10} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack11_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack11, "Macpack case image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb11} />
                                     </button>
                                 </div>
                             </div>
@@ -235,53 +285,93 @@ export default function Macpack() {
                         <div className="accordion__content">
                             <div className="img__gallery">
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack12_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack12, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb12} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack13_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack13, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb13} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack14_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack14, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb14} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack15_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack15, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb15} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack16_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack16, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb16} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack17_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack17, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb17} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack18_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack18, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb18} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack19_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack19, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb19} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack20_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack20, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb20} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack21_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack21, "Macpack guts image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb21} />
                                     </button>
                                 </div>
                             </div>
@@ -309,38 +399,75 @@ export default function Macpack() {
                         <div className="accordion__content">
                             <div className="img__gallery">
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack22_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack22, "Macpack software image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb22} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack23_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack23, "Macpack software image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb23} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack24_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack24, "Macpack software image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb24} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack25_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack25, "Macpack software image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb25} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack261_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack261, "Macpack software image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb261} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack26_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack26, "Macpack software image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb26} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack27_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack33, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb33} />
+                                    </button>
+                                </div>
+                                <div className="img__gallery__image">
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack27, "Macpack software image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb27} />
                                     </button>
                                 </div>
 
@@ -369,48 +496,84 @@ export default function Macpack() {
                         <div className="accordion__content">
                             <div className="img__gallery">
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack28_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack28, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb28} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack29_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack29, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb29} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack30_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack30, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb30} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack301_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack301, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb301} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack302_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack302, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb302} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack303_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack303, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb303} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack31_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack31, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb31} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack32_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack291, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb291} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" src={macpack33_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack32, "Macpack paint image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" src={macpack_thumb32} />
                                     </button>
                                 </div>
                             </div>
@@ -462,58 +625,102 @@ export default function Macpack() {
                         <div className="accordion__content">
                             <div className="img__gallery">
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack34_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack34, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb34} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack35_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack35, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb35} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack36_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack36, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb36} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack37_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack37, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb37} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack38_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack38, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb38} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack39_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack39, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb39} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack40_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack40, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb40} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack41_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack41, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb41} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack42_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack42, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb42} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack43_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack43, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb43} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
-                                    <button className="img__gallery__thumb">
-                                        <img className="img__thumb" alt="Image thumbnail" src={macpack44_thumb} />
+                                    <button 
+                                        className="img__gallery__thumb"
+                                        onClick={() => handleImageClick(macpack44, "Macpack adventures image")}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <img className="img__thumb" alt="Image thumbnail" src={macpack_thumb44} />
                                     </button>
                                 </div>
                             </div>
@@ -524,19 +731,29 @@ export default function Macpack() {
             {/* Modal for image viewing */}
             {modalImg && (
                 <div className="img-modal" onClick={handleClose} style={{
-                    position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+                    position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
                     backgroundColor: 'rgba(0, 0, 0, 0.8)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 1000
                 }}>
-                    <img
-                        src={modalImg.src}
-                        alt={modalImg.alt}
-                        style={{ maxWidth: '80vw', maxHeight: '80vh' }}
-                    />
+                    {modalImg.isVideo ? (
+                        <video
+                            src={modalImg.src}
+                            controls
+                            autoPlay
+                            style={{ maxWidth: '80vw', maxHeight: '80vh' }}
+                            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking video controls
+                        />
+                    ) : (
+                        <img
+                            src={modalImg.src}
+                            alt={modalImg.alt}
+                            style={{ maxWidth: '80vw', maxHeight: '80vh' }}
+                        />
+                    )}
                     <button 
                         className="img__gallery__close"
                         onClick={handleClose}
-                        style={{ position: 'absolute', top: '20px', right: '20px', fontSize: '2rem' }}
-                    >x</button>
+                        style={{ position: 'absolute', top: '20px', right: '20px', fontSize: '2rem', color: 'white', background: 'none', border: 'none', cursor: 'pointer' }}
+                    >×</button>
                 </div>
             )}
             <Footer />
