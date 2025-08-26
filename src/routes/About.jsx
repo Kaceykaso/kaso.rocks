@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Gameboy } from "../components/Gameboy";
 import { Footer } from "../components/Footer";
+import kaso_speaks from "../assets/kaso.speaks.gif";
 
 
 export default function About() {
@@ -13,7 +14,7 @@ export default function About() {
                     <Gameboy />
                     <div class="cartridge">
                         <div class="frame">
-                            <img src="./src/assets/kaso.speaks.gif" alt="Kacey Lewis speaking at conferences, tech talks, etc" />
+                            <img src={kaso_speaks} alt="Kacey Lewis speaking at conferences, tech talks, etc" />
                         </div>
                     </div>
                 </section>
@@ -30,7 +31,7 @@ export default function About() {
                     <div>
                         <h3>Too Much Screen Time</h3>
                         <p>
-                            For the last 20+ years, my home has been in front of a screen - whether it's my monitor typing code, a different monitor playing video games, 
+                            For the last 20+ years, my home has been in front of a screen - whether it&apos;s my monitor typing code, a different monitor playing video games, 
                             or my tablet drawing new designs - I consume a great deal of screen time. I became addicted to customizing whatever I had with my own designs and 
                             details early on, through making my own textures and patterns for The Sims in Photoshop. When a friend suggested I learn <strong>Macromedia Flash</strong>, it was all 
                             downhill - I not only taught myself how to make animations and websites with the then "cutting edge software", I dropped out of my animation program at 
@@ -47,7 +48,7 @@ export default function About() {
                             <a href="https://music-cms.ucsd.edu/ugrad/icam-major.html" title="Interdisplinary Computing and the Arts Major at UCSD" target="_blank">ICAM</a> 
                             program at <a href="https://ucsd.edu/" title="University of California in San Diego" target="_blank">UC San Diego</a>, and moved up to San Francisco. As a new UI Engineer, 
                             I quickly got offers to speak at conferences, write for <a href="https://en.wikipedia.org/wiki/Net_(magazine)" title="Former .Net Magazine, previously Web Designer Magazine" target="_blank">.Net Magazine</a>, 
-                            and became a mentor within <a href="https://www.linkedin.com/showcase/linkedin-wit/" title="LinkedIn Women in Tech" target="_blank">LinkedIn's WIT group</a> and 
+                            and became a mentor within <a href="https://www.linkedin.com/showcase/linkedin-wit/" title="LinkedIn Women in Tech" target="_blank">LinkedIn&apos;s WIT group</a> and 
                             <a href="https://www.joinwest.org/" title="WEST Mentoring" target="_blank">WEST Mentoring</a>. This 
                             love for teaching out and helping others avoid common pitfalls of being a woman in tech led me to engineering management. As the <strong>Engineering Manager</strong> for 
                             the Horizontal UI Engineering team, my love of design and visual arts finally came full circle with my love of engineering. 
