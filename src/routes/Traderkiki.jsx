@@ -47,7 +47,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1806028699/geometric-triangle-jazz-earrings-retro" className="link-list" title="Geometric Triangle Jazz Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1806028699/geometric-triangle-jazz-earrings-retro" className="link-list" title="Geometric Triangle Jazz Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Geometric Triangle Jazz earrings on Etsy" 
@@ -66,7 +66,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1806033813/geometric-square-jazz-earrings-retro-80s" className="link-list" title="Geometric Square Jazz Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1806033813/geometric-square-jazz-earrings-retro-80s" className="link-list" title="Geometric Square Jazz Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Geometric Square Jazz earrings on Etsy" 
@@ -85,7 +85,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1809498763/vaporwave-retro-floppy-earrings" className="link-list" title="Vaporwave Retro Floppy Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1809498763/vaporwave-retro-floppy-earrings" className="link-list" title="Vaporwave Retro Floppy Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Vaporwave Retro Floppy earrings on Etsy" 
@@ -104,7 +104,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1799861012/vaporwave-glow-arcade-moon-earrings" className="link-list" title="Vaporwave Glow Arcade Moon Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1799861012/vaporwave-glow-arcade-moon-earrings" className="link-list" title="Vaporwave Glow Arcade Moon Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Vaporwave Glow Arcade Moon earrings on Etsy" 
@@ -123,7 +123,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1804503633/vaporwave-sunset-hoop-earrings-retro" className="link-list" title="Vaporwave Sunset Hoop Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1804503633/vaporwave-sunset-hoop-earrings-retro" className="link-list" title="Vaporwave Sunset Hoop Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Vaporwave Sunset Hoop earrings on Etsy" 
@@ -142,7 +142,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/your/shops/me/listing-editor/edit/1891806580" className="link-list" title="90s Memphis Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1891806580/90s-memphis-floppy-earrings-vaporwave" className="link-list" title="90s Memphis Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="90s Memphis earrings on Etsy" 
@@ -161,7 +161,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1854313829/arcade-carpet-glow-earrings-90s" className="link-list" title="Arcade Carpet Glow Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1854313829/arcade-carpet-glow-earrings-90s" className="link-list" title="Arcade Carpet Glow Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Arcade Carpet Glow earrings on Etsy" 
@@ -180,7 +180,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1809489177/geometric-rectangle-deco-jazz-earrings" className="link-list" title="Geometric Rectangle Deco Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1809489177/geometric-rectangle-deco-jazz-earrings" className="link-list" title="Geometric Rectangle Deco Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Geometric Rectangle Deco earrings on Etsy" 
@@ -199,7 +199,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1903270423/flat-stacked-glow-macintosh-mini-hoops" className="link-list" title="Glow Macintosh Stacked Mini Hoop Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1903270423/flat-stacked-glow-macintosh-mini-hoops" className="link-list" title="Glow Macintosh Stacked Mini Hoop Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Glow Macintosh Stacked Mini Hoop earrings on Etsy" 
@@ -218,7 +218,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1857941506/vaporwave-glow-palm-stacked-triangle" className="link-list" title="Vaporwave Glow Palm Stacked Triangle Mini Hoop Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1857941506/vaporwave-glow-palm-stacked-triangle" className="link-list" title="Vaporwave Glow Palm Stacked Triangle Mini Hoop Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Vaporwave Glow Palm Stacked Triangle Mini Hoop earrings on Etsy" 
@@ -237,7 +237,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1799841828/retro-eyes-geometric-earrings-80s" className="link-list" title="Retro Eyes Geometric Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1799841828/retro-eyes-geometric-earrings-80s" className="link-list" title="Retro Eyes Geometric Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Retro Eyes Geometric earrings on Etsy" 
@@ -256,7 +256,7 @@ export default function Traderkiki() {
                         </label>
                         <div className="accordion__content">
                             <p>
-                                <a href="https://www.etsy.com/listing/1799881242/monstera-night-glow-window-earrings" className="link-list" title="Monstera Night Glow Earrings on Etsy" target="_blank">
+                                <a href="https://traderkiki.etsy.com/listing/1799881242/monstera-night-glow-window-earrings" className="link-list" title="Monstera Night Glow Earrings on Etsy" target="_blank">
                                     <img 
                                         className="link-list__thumb" 
                                         alt="Monstera Night Glow earrings on Etsy" 
