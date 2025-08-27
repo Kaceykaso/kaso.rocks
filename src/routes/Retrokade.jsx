@@ -2,30 +2,9 @@ import { useState } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import "../css/accordion.css";
-import "../css/image_viewer.css"
-import retrokade from "../assets/retrokade.png";
-import a1up from "../assets/a1up.png";
-import retropie from "../assets/retropie.png";
-import cabinet1 from "../assets/retrokade/cabinet1.jpg";
-import cabinet1_thumb from "../assets/retrokade/cabinet1_thumb.jpg";
-import cabinet2 from "../assets/retrokade/cabinet2.jpg";
-import cabinet2_thumb from "../assets/retrokade/cabinet2_thumb.jpg";
-import cabinet3 from "../assets/retrokade/cabinet3.jpg";
-import cabinet3_thumb from "../assets/retrokade/cabinet3_thumb.jpg";
-import cabinet4 from "../assets/retrokade/cabinet4.jpg";
-import cabinet4_thumb from "../assets/retrokade/cabinet4_thumb.jpg";
-import cabinet5 from "../assets/retrokade/cabinet5.jpg";
-import cabinet5_thumb from "../assets/retrokade/cabinet5_thumb.jpg";
-import cabinet6 from "../assets/retrokade/cabinet6.jpg";
-import cabinet6_thumb from "../assets/retrokade/cabinet6_thumb.jpg";
-import cabinet7 from "../assets/retrokade/cabinet7.jpg";
-import cabinet7_thumb from "../assets/retrokade/cabinet7_thumb.jpg";
-import cabinet8 from "../assets/retrokade/cabinet8.jpg";
-import cabinet8_thumb from "../assets/retrokade/cabinet8_thumb.jpg";
-import cabinet9 from "../assets/retrokade/cabinet9.jpg";
-import cabinet9_thumb from "../assets/retrokade/cabinet9_thumb.jpg";
-import cabinet10 from "../assets/retrokade/cabinet10.jpg";
-import cabinet10_thumb from "../assets/retrokade/cabinet10_thumb.jpg";
+import "../css/image_viewer.css";
+import { icons } from "../js/icons";
+import { fullImages, thumbnails, promo } from "../js/retrokade_images";
 
 export default function Retrokade() {
     const [modalImg, setModalImg] = useState(null);
@@ -40,16 +19,16 @@ export default function Retrokade() {
         <>
             <Header />
             <section className="left no-scroll">
-                <img className="img__promo retrokade" src={retrokade} alt="Retrokade arcade cabinet" />
+                <img className="img__promo retrokade" src={promo.retrokade} alt="Retrokade arcade cabinet" />
             </section>
             
             <section className="longform right scroll">
                 <div className="title__retro">
                     <h2>The Retrokade</h2>
                     <p>
-                        <img className="img__icon" src={a1up} />
+                        <img className="img__icon" src={icons.a1up} />
                         Arcade1up + RetroPie
-                        <img className="img__icon" src={retropie} />
+                        <img className="img__icon" src={icons.retropie_logo} />
                     </p>
                 </div>
                 <div className="accordion">
@@ -63,82 +42,82 @@ export default function Retrokade() {
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet1, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet1, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet1_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet1_thumb} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet2, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet2, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet2_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet2_thumb} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet3, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet3, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet3_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet3_thumb} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet4, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet4, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet4_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet4_thumb} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet5, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet5, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet5_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet5_thumb} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet6, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet6, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet6_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet6_thumb} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet7, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet7, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet7_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet7_thumb} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet8, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet8, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet8_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet8_thumb} />
                                     </button>
                                 </div>
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet9, "Retrokade cabinet image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet9, "Retrokade cabinet image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet9_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet9_thumb} />
                                     </button>
                                 </div>
                             </div>
@@ -176,10 +155,10 @@ export default function Retrokade() {
                                 <div className="img__gallery__image">
                                     <button 
                                         className="img__gallery__thumb"
-                                        onClick={() => handleImageClick(cabinet10, "Retrokade cabinet internals image")}
+                                        onClick={() => handleImageClick(fullImages.cabinet10, "Retrokade cabinet internals image")}
                                         style={{ cursor: 'pointer' }}
                                     >
-                                        <img className="img__thumb" src={cabinet10_thumb} />
+                                        <img className="img__thumb" src={thumbnails.cabinet10_thumb} />
                                     </button>
                                 </div>
                             </div>
