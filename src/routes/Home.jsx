@@ -7,10 +7,10 @@ export default function Home() {
     return (
         <>
             <Hero />
-                <section className="main">
-                    <Gameboy />
-                    <MessageList />
-                </section>
+            <section className="main">
+                <Gameboy />
+                <MessageList />
+            </section>
             <Footer />
         </>
     )

@@ -40,11 +40,6 @@ export function Hero() {
                         <i className="nes-icon gmail is-medium"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.valheimians.com/member/kasoline/" title="Kasoline on Valheimians" target="_blank">
-                        <img src={valheimians} alt="Valheimians profile page" height="46px" width="46px" />
-                    </a>
-                </li>
             </ul>
 	    </header>
     )

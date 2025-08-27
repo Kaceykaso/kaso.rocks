@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import "../css/accordion.css";
@@ -111,7 +111,10 @@ import macpack44 from "../assets/macpack/macpack44.jpg";
 
 export default function Macpack() {
     const [modalImg, setModalImg] = useState(null);
-    
+    const [showScreensaver, setShowScreensaver] = useState(false);
+    const screenRef = useRef(null);
+    const desktopRef = useRef(null);
+
     const handleImageClick = (imgSrc, imgAlt) => {
         const isVideo = imgSrc.includes('.mp4') || imgSrc.includes('.webm') || imgSrc.includes('.mov');
         setModalImg({ src: imgSrc, alt: imgAlt, isVideo });
@@ -119,13 +122,38 @@ export default function Macpack() {
 
     const handleClose = () => setModalImg(null);
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowScreensaver(true);
+            console.log("Surprise! It's flying toasters!");
+        }, 15000);
+        // cleanup
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
             <Header />
             <section className="left no-scroll machack">
-                <img className="img__promo main" src={macpack_promo} alt="MacPack image, showing original Macintosh SE case painted light blue, yellow, pink, and purple; with backpack straps and an old clear telephone attached." />
-                <img id="macpack_promo_screensaver" className="img__promo hide" src={macpack_promo_screensaver} alt="Macpack screensaver image" />
-                <img id="macpack_promo_desktop" className="img__promo alt" src={macpack_promo_desktop} alt="Macpack desktop screen image"  />
+                <img 
+                    className="img__promo main" 
+                    src={macpack_promo} 
+                    alt="MacPack image, showing original Macintosh SE case painted light blue, yellow, pink, and purple; with backpack straps and an old clear telephone attached." 
+                />
+                <img 
+                    ref={screenRef}
+                    id="macpack_promo_screensaver" 
+                    className={`img__promo ${showScreensaver ? '' : 'hide'}`} 
+                    src={macpack_promo_screensaver} 
+                    alt="Macpack screensaver image" 
+                />
+                <img 
+                    ref={desktopRef}
+                    id="macpack_promo_desktop" 
+                    className={`img__promo ${showScreensaver ? 'hide' : ''}`} 
+                    src={macpack_promo_desktop} 
+                    alt="Macpack desktop screen image"  
+                />
             </section>
             
             <section className="longform right scroll">
