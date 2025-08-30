@@ -231,6 +231,29 @@ export default function Traderkiki() {
                         </div>
                     </div>
                     <div className="accordion__drawer">
+                        <input type="checkbox" name="accordion-9" id="cb9" />
+                        <label for="cb9" className="accordion__title img__gallery">
+                            <img 
+                                className="img__thumb no-border" 
+                                alt="OG Macintosh Stacked Mini Hoop earrings thumbnail" 
+                                src={fullImages.og_macintosh_stack} 
+                            />
+                            <h3>OG Macintosh Stacked Mini Hoop Earrings</h3>
+                        </label>
+                        <div className="accordion__content">
+                            <p>
+                                <a href="https://traderkiki.etsy.com/listing/4356357817/flat-stacked-og-macintosh-mini-hoops" className="link-list" title="OG Macintosh Stacked Mini Hoop Earrings on Etsy" target="_blank">
+                                    <img 
+                                        className="link-list__thumb" 
+                                        alt="OG Macintosh Stacked Mini Hoop earrings on Etsy" 
+                                        src={fullImages.og_macintosh_stack} 
+                                    />
+                                    Check it out on Etsy
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="accordion__drawer">
                         <input type="checkbox" name="accordion-10" id="cb10" />
                         <label for="cb10" className="accordion__title img__gallery">
                             <img 
