@@ -231,8 +231,8 @@ export default function Traderkiki() {
                         </div>
                     </div>
                     <div className="accordion__drawer">
-                        <input type="checkbox" name="accordion-9" id="cb9" />
-                        <label for="cb9" className="accordion__title img__gallery">
+                        <input type="checkbox" name="accordion-10" id="cb10" />
+                        <label for="cb10" className="accordion__title img__gallery">
                             <img 
                                 className="img__thumb no-border" 
                                 alt="OG Macintosh Stacked Mini Hoop earrings thumbnail" 
@@ -254,8 +254,8 @@ export default function Traderkiki() {
                         </div>
                     </div>
                     <div className="accordion__drawer">
-                        <input type="checkbox" name="accordion-10" id="cb10" />
-                        <label for="cb10" className="accordion__title img__gallery">
+                        <input type="checkbox" name="accordion-11" id="cb11" />
+                        <label for="cb11" className="accordion__title img__gallery">
                             <img 
                                 className="img__thumb no-border" 
                                 alt="Vaporwave Glow Palm Stacked Triangle Mini Hoop earrings thumbnail" 
@@ -277,8 +277,8 @@ export default function Traderkiki() {
                         </div>
                     </div>
                     <div className="accordion__drawer">
-                        <input type="checkbox" name="accordion-11" id="cb11" />
-                        <label for="cb11" className="accordion__title img__gallery">
+                        <input type="checkbox" name="accordion-12" id="cb12" />
+                        <label for="cb12" className="accordion__title img__gallery">
                             <img 
                                 className="img__thumb no-border" 
                                 alt="Retro Eyes Geometric earrings thumbnail" 
@@ -300,8 +300,8 @@ export default function Traderkiki() {
                         </div>
                     </div>
                     <div className="accordion__drawer">
-                        <input type="checkbox" name="accordion-12" id="cb12" />
-                        <label for="cb12" className="accordion__title img__gallery">
+                        <input type="checkbox" name="accordion-13" id="cb13" />
+                        <label for="cb13" className="accordion__title img__gallery">
                             <img 
                                 className="img__thumb no-border" 
                                 alt="Monstera Night Glow earrings thumbnail" 

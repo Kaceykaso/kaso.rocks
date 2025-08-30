@@ -1,7 +1,5 @@
 import "/src/css/header.css"
-import dcg_831 from '/src/assets/dcg_831.png';
-import etsy_icon from '/src/assets/etsy_icon.png';
-import valheimians from '/src/assets/valheimians.png';
+import { icons } from '../js/icons.jsx';
 
 
 export function Hero() {
@@ -17,12 +15,12 @@ export function Hero() {
             <ul className="hero">
                 <li>
                     <a href="https://dcgsantacruz.org/" title="Defcon Group Santa Cruz - DCG 831" target="_blank">
-                        <img src={dcg_831} height="46px" width="46px" />
+                        <img src={icons.dcg_831} height="46px" width="46px" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.etsy.com/shop/TraderKiki" title="Trader Kiki shop on Etsy with 3D printed earrings" target="_blank">
-                        <img src={etsy_icon} height="46px" width="46px" />
+                    <a href="https://traderkiki.etsy.com" title="Trader Kiki shop on Etsy with 3D printed earrings" target="_blank">
+                        <img src={icons.etsy_icon} height="46px" width="46px" />
                     </a>
                 </li>
                 <li>

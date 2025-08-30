@@ -3,8 +3,10 @@ import retropie_logo from "../assets/retropie.png";
 import retrokade from "../assets/retrokade.png";
 import a1up from "../assets/a1up.png";
 import etsy_icon from "../assets/etsy_icon.png";
+import dcg_831 from '/src/assets/dcg_831.png';
 
 export const icons = {
+    dcg_831,
     apple_logo,
     retropie_logo,
     retrokade,
