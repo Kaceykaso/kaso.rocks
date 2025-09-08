@@ -12,6 +12,7 @@ import vaporwave_glow_palm_stacked_triangle from "../assets/vaporwave_glow_palm_
 import retro_eyes from "../assets/retro_eyes.jpg";
 import monstera_night_glow from "../assets/monstera_night_glow.jpg";
 import og_macintosh_stack from "../assets/og_macintosh_stack.jpg";
+import lava_lamp_glow from "../assets/lava_lamp_glow.jpg";
 
 export const fullImages = {
     geomatric_triangle_jazz,
@@ -26,7 +27,8 @@ export const fullImages = {
     vaporwave_glow_palm_stacked_triangle,
     retro_eyes,
     monstera_night_glow,
-    og_macintosh_stack
+    og_macintosh_stack,
+    lava_lamp_glow
 };
 
 export const promo = {

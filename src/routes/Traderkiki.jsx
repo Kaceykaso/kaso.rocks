@@ -322,6 +322,29 @@ export default function Traderkiki() {
                             </p>
                         </div>
                     </div>
+                    <div className="accordion__drawer">
+                        <input type="checkbox" name="accordion-14" id="cb14" />
+                        <label for="cb14" className="accordion__title img__gallery">
+                            <img 
+                                className="img__thumb no-border" 
+                                alt="Retro Lava Lamp Glow in the Dark earrings thumbnail" 
+                                src={fullImages.lava_lamp_glow} 
+                            />
+                            <h3>Retro Lava Lamp Glow in the Dark Earrings</h3>
+                        </label>
+                        <div className="accordion__content">
+                            <p>
+                                <a href="https://traderkiki.etsy.com/listing/4365558438/retro-lava-lamp-earrings-uv-reactive" className="link-list" title="Retro Lava Lamp Glow in the Dark Earrings on Etsy" target="_blank">
+                                    <img 
+                                        className="link-list__thumb" 
+                                        alt="Retro Lava Lamp Glow in the Dark earrings on Etsy" 
+                                        src={fullImages.lava_lamp_glow} 
+                                    />
+                                    Check it out on Etsy
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
             
