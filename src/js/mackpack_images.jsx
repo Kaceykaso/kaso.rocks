@@ -102,7 +102,7 @@ import macpack from "../assets/macpack_promo.png";
 import macpack_screensaver from "../assets/macpack_promo_screensaver.gif";
 import macpack_desktop from "../assets/macpack_promo_desktop.png";
 
-export const fullImages = {
+const fullImages = {
     macpack1, macpack2, macpack3, macpack4, macpack5, macpack51,
   macpack6, macpack7, macpack8, macpack9, macpack10, macpack11,
   macpack12, macpack13, macpack14, macpack15, macpack16, macpack17,
@@ -114,7 +114,7 @@ export const fullImages = {
   macpack43, macpack44
 }
 
-export const thumbnails = {
+const thumbnails = {
     macpack_thumb1, macpack_thumb2, macpack_thumb3, macpack_thumb4, macpack_thumb5, macpack_thumb51,
   macpack_thumb6, macpack_thumb7, macpack_thumb8, macpack_thumb9, macpack_thumb10, macpack_thumb11,
   macpack_thumb12, macpack_thumb13, macpack_thumb14, macpack_thumb15, macpack_thumb16, macpack_thumb17,
@@ -131,3 +131,67 @@ export const promo = {
   macpack_screensaver,
   macpack_desktop
 };
+
+export const caseImages = [
+      { fullSrc: fullImages.macpack1, thumbSrc: thumbnails.macpack_thumb1, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack2, thumbSrc: thumbnails.macpack_thumb2, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack3, thumbSrc: thumbnails.macpack_thumb3, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack4, thumbSrc: thumbnails.macpack_thumb4, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack5, thumbSrc: thumbnails.macpack_thumb5, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack51, thumbSrc: thumbnails.macpack_thumb51, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack6, thumbSrc: thumbnails.macpack_thumb6, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack7, thumbSrc: thumbnails.macpack_thumb7, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack8, thumbSrc: thumbnails.macpack_thumb8, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack9, thumbSrc: thumbnails.macpack_thumb9, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack10, thumbSrc: thumbnails.macpack_thumb10, alt: "MacPack case image" },
+      { fullSrc: fullImages.macpack11, thumbSrc: thumbnails.macpack_thumb11, alt: "MacPack case image" }
+  ];
+
+  export const gutsImages = [
+      { fullSrc: fullImages.macpack12, thumbSrc: thumbnails.macpack_thumb12, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack13, thumbSrc: thumbnails.macpack_thumb13, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack14, thumbSrc: thumbnails.macpack_thumb14, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack15, thumbSrc: thumbnails.macpack_thumb15, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack16, thumbSrc: thumbnails.macpack_thumb16, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack17, thumbSrc: thumbnails.macpack_thumb17, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack18, thumbSrc: thumbnails.macpack_thumb18, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack19, thumbSrc: thumbnails.macpack_thumb19, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack20, thumbSrc: thumbnails.macpack_thumb20, alt: "MacPack guts image" },
+      { fullSrc: fullImages.macpack21, thumbSrc: thumbnails.macpack_thumb21, alt: "MacPack guts image" }
+  ];
+
+  export const softwareImages = [
+      { fullSrc: fullImages.macpack22, thumbSrc: thumbnails.macpack_thumb22, alt: "MacPack software image" },
+      { fullSrc: fullImages.macpack23, thumbSrc: thumbnails.macpack_thumb23, alt: "MacPack software image" },
+      { fullSrc: fullImages.macpack24, thumbSrc: thumbnails.macpack_thumb24, alt: "MacPack software image" },
+      { fullSrc: fullImages.macpack25, thumbSrc: thumbnails.macpack_thumb25, alt: "MacPack software image" },
+      { fullSrc: fullImages.macpack261, thumbSrc: thumbnails.macpack_thumb261, alt: "MacPack software image" },
+      { fullSrc: fullImages.macpack26, thumbSrc: thumbnails.macpack_thumb26, alt: "MacPack software image" },
+      { fullSrc: fullImages.macpack33, thumbSrc: thumbnails.macpack_thumb33, alt: "MacPack software image" },
+      { fullSrc: fullImages.macpack27, thumbSrc: thumbnails.macpack_thumb27, alt: "MacPack software image" }
+  ];
+
+  export const paintImages = [
+      { fullSrc: fullImages.macpack28, thumbSrc: thumbnails.macpack_thumb28, alt: "MacPack paint image" },
+      { fullSrc: fullImages.macpack29, thumbSrc: thumbnails.macpack_thumb29, alt: "MacPack paint image" },
+      { fullSrc: fullImages.macpack30, thumbSrc: thumbnails.macpack_thumb30, alt: "MacPack paint image" },
+      { fullSrc: fullImages.macpack301, thumbSrc: thumbnails.macpack_thumb301, alt: "MacPack paint image" },
+      { fullSrc: fullImages.macpack302, thumbSrc: thumbnails.macpack_thumb302, alt: "MacPack paint image" },
+      { fullSrc: fullImages.macpack303, thumbSrc: thumbnails.macpack_thumb303, alt: "MacPack paint image" },
+      { fullSrc: fullImages.macpack31, thumbSrc: thumbnails.macpack_thumb31, alt: "MacPack paint image" },
+      { fullSrc: fullImages.macpack32, thumbSrc: thumbnails.macpack_thumb32, alt: "MacPack paint image" }
+  ];
+
+  export const adventureImages = [
+      { fullSrc: fullImages.macpack34, thumbSrc: thumbnails.macpack_thumb34, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack35, thumbSrc: thumbnails.macpack_thumb35, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack36, thumbSrc: thumbnails.macpack_thumb36, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack37, thumbSrc: thumbnails.macpack_thumb37, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack38, thumbSrc: thumbnails.macpack_thumb38, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack39, thumbSrc: thumbnails.macpack_thumb39, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack40, thumbSrc: thumbnails.macpack_thumb40, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack41, thumbSrc: thumbnails.macpack_thumb41, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack42, thumbSrc: thumbnails.macpack_thumb42, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack43, thumbSrc: thumbnails.macpack_thumb43, alt: "MacPack adventure image" },
+      { fullSrc: fullImages.macpack44, thumbSrc: thumbnails.macpack_thumb44, alt: "MacPack adventure image" }
+  ];
