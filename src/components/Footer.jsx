@@ -1,9 +1,12 @@
 import "/src/css/footer.css"
 
 export function Footer() {
+    const currentYear = () => {
+        return new Date().getFullYear();
+    }
     return (
         <footer id="footer">
-            <p>&copy; 2025 Kacey Lewis</p>
+            <p>&copy; {currentYear()} Kacey Lewis</p>
             <p>
                 <a className="surprise" href="https://github.com/pajasevi/CSSnowflakes" title="CSS Snowflakes by pakasevi on Gtihub" target="_blank">CSS Snowflakes by pajasevi</a>
             </p>
