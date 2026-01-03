@@ -21,7 +21,7 @@ export function MessageList() {
                         <div className="nes-balloon from-left macpack">
                             <p>
                                 Or my awesome<br /> 
-                                <Link to="/traderkiki">earrings on Etsy!</Link></p>
+                                <Link to="/projects/traderkiki">earrings on Etsy!</Link></p>
                         </div>
                     </div>
                 </div>

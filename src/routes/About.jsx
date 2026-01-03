@@ -23,7 +23,6 @@ export default function About() {
                         <h2><i>&#128588;</i> Hey, I'm Kacey (She/Her) <i>&#127881;</i></h2>
                         <p>I'm an engineering leader who constantly has one foot in design and one foot in code</p>
                         <ul class="quicklinks">
-                            <li><a href="Kacey_Lewis_resume.pdf" title="Kacey Lewis' resume(PDF)" target="_blank">Resume</a></li>
                             <li><a href="https://linkedin.com/in/kaceylewis" title="Kacey Lewis on LinkedIn" target="_blank">LinkedIn</a></li>
                             <li><a href="https://github.com/Kaceykaso" title="Kacey Lewis on Github" target="_blank">Github</a></li>
                         </ul>
